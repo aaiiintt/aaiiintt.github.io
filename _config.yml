@@ -2,7 +2,7 @@
 title:               AAIIINTT
 tagline:             ''
 description:         'IAINTAIT algo-sorted blog about all sorts'
-url:                 http://aaiiintt.xyz
+url:                  https://aaiiintt.github.io/
 baseurl:             'https://aaiiintt.github.io/'
 paginate:            5
 permalink:           pretty
@@ -19,4 +19,3 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
