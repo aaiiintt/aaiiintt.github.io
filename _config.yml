@@ -7,6 +7,8 @@ baseurl:             ''
 paginate:            5
 permalink:           pretty
 
+
+
 # About/contact
 author:
   name:              Iain Tait
