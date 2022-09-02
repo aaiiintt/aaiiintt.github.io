@@ -2,8 +2,8 @@
 title:               AAIIINTT
 tagline:             ''
 description:         'IAINTAIT algo-sorted blog about all sorts'
-url:                  https://aaiiintt.github.io/
-baseurl:             /PROJECT
+url:                 https://aaiiintt.github.io
+baseurl:             'https://aaiiintt.github.io'
 paginate:            5
 permalink:           pretty
 
