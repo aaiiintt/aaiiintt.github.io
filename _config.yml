@@ -3,7 +3,7 @@ title:               AAIIINTT
 tagline:             ''
 description:         'IAINTAIT algo-sorted blog about all sorts'
 url:                 http://aaiiintt.xyz
-baseurl:             ''
+baseurl:             'https://aaiiintt.github.io/'
 paginate:            5
 permalink:           pretty
 
