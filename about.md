@@ -3,27 +3,14 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+## Why is this blog called AAIIINTT
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Well, short answer is: it's Iain Tait sorted alphabetically. I think it popped up during an odd coding exercise or something like that.
 
-There are currently two themes built on Poole:
+It shows how many A's and I's my parents gifted me. Proportionally anyway.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+It's a bit odd. And quite geeky. Slightly awkward. And it's got some AI in it. Which seemed like a good fit.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Why am I starting a blog like this in 2022?
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Great question. I've got a post coming about that, and I'll update this page when I do.

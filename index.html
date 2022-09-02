@@ -10,15 +10,13 @@ title: Home
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}
       </a>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
+    </div>
   {% endfor %}
 </div>
-
+<!-- 
 <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
@@ -35,3 +33,4 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+ -->

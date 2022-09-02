@@ -4,12 +4,8 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>{{ site.description }}</p>
-  </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -25,14 +21,11 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item" href="https://food.xyz">food.xyz</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://aaiiintt.xyz">AAIIINTT</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://iaintait.com">Iain Tait</a> is marked with <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0</a></p>
   </div>
 </div>
