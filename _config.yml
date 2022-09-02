@@ -4,7 +4,7 @@ tagline:             'The algorithmically sorted blog of Iain Tait'
 description:         'Who knows what's going to happen here'
 url:                 http://aaiiintt.xyz
 baseurl:             ''
-paginate:            10
+paginate:            5
 permalink:           pretty
 
 # About/contact
