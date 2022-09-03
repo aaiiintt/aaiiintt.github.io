@@ -3,9 +3,14 @@ layout: post
 title: Sorry Dieter
 ---
 
-![sorry to you know who](/images/dieter/dieter1.gif)
+<!-- ![sorry to you know who](/images/dieter/dieter1.gif) -->
+<video autoplay loop muted playsinline>
+  <source src="images/dieter/test1.webm" type="video/webm">
+  <source src="images/dieter/test1.mp4" type="video/mp4">
+</video>
 
-I was experimenting with using Stable Diffusion to make 'things in the shape of letters'. One thing led to another and in a couple of hours I'd generated a full alphabet of Rams-ian industrial design. So I whittled down the images I had and made a quick bosh through them... 
+
+I was experimenting with using [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) to see if I could coax it to make 'things in the shape of letters'. One thing led to another and in a couple of hours I'd generated a full alphabet of Dieter Rams-ian industrial design. So I whittled down the images I had and made a quick bosh through them... 
 
 These are 'raw' from my home PC. I haven't itterated on them, post-processed them, or use AI-upscalers or anyhting. 
 
