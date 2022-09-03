@@ -12,7 +12,7 @@ title: Sorry Dieter
 
 I was playing with Stable Diffusion to make 'things in the shape of letters'. One thing led to another and in a couple of hours I'd generated a full alphabet of Dieter Rams-ian industrial design. So I selected a couple of hundred images and stuck them together. [There's a short (15s) video over on Vimeo](https://vimeo.com/745606590).
 
-I haven't itterated on them, post-processed them, or use AI-upscalers or anyhting. This is how tthey come out of my home PC 'raw'. It's funny because I can already feel how dated this is going to look in a few months.
+I haven't iterated on them, post-processed them, or use AI-upscalers or anything. This is how they come out of my home PC 'raw'. It's funny because I can already feel how dated this is going to look in a few months.
 
 <!-- ![sorry to you know who](/images/dieter/dieter2.gif) -->
 
@@ -34,9 +34,9 @@ I'm not saying this stuff is *bad*. The technology itself is rarely at fault as 
   <source src="/images/dieter/test3.mmp4" type="video/mp4">
 </video>
 
-Things are going to get pretty wild on this front over the next few months and years. I think there's amazing potential for artists and tecnhologists to work together to create mind-blowing systems and tools and experiences. But only if enough people from different background, interests and value systems are invited into the process.
+Things are going to get pretty wild on this front over the next few months and years. I think there's amazing potential for artists and technologists to work together to create mind-blowing systems and tools and experiences. But only if enough people from different background, interests and value systems are invited into the process.
 
-It may be the eternal stupid optimist in me, but the potential for artists to come together feeding into communal GANs. Systems that reward artists with franctional onoing ownership of percentages depending on how much of their DNA flows through the Neural Network. 
+It may be the eternal stupid optimist in me, but the potential for artists to come together feeding into communal GANs. Systems that reward artists with fractional ongoing ownership of percentages depending on how much of their DNA flows through the Neural Network. 
 
 Or some such nonsense. 
 
