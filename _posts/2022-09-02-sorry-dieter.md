@@ -6,7 +6,7 @@ title: Sorry Dieter
 <!-- ![sorry to you know who](/images/dieter/dieter1.gif) -->
 
 
-[this is just a machine spewing...](/images/dieter/dieter1.webp)
+![this is just a machine spewing...](/images/dieter/dieter1.webp)
 
 I was playing with Stable Diffusion to make 'things in the shape of letters'. One thing led to another and in a couple of hours I'd generated a full alphabet of Dieter Rams-ian industrial design. So I selected a couple of hundred images and stuck them together. [There's a short (15s) video over on Vimeo](https://vimeo.com/745606590).
 
@@ -14,7 +14,7 @@ I haven't iterated on them, post-processed them, or use AI-upscalers or anything
 
 <!-- ![sorry to you know who](/images/dieter/dieter2.gif) -->
 
-[this is just a machine spewing...](/images/dieter/dieter2.webp)
+![this is just a machine spewing...](/images/dieter/dieter2.webp)
 
 
 This is an example of just how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. I have mixed feelings about it.
@@ -25,7 +25,7 @@ I'm not saying this stuff is *bad*. The technology itself is rarely at fault as 
 
 <!-- ![sorry to you know who](/images/dieter/dieter3.gif) -->
 
-[this is just a machine spewing...](/images/dieter/dieter3.webp)
+![this is just a machine spewing...](/images/dieter/dieter3.webp)
 
 Things are going to get pretty wild on this front over the next few months and years. I think there's amazing potential for artists and technologists to work together to create mind-blowing systems and tools and experiences. But only if enough people from different background, interests and value systems are invited into the process.
 
