@@ -8,13 +8,15 @@ title: Sorry Dieter
 
 I was playing with Stable Diffusion to make 'things in the shape of letters'. One thing led to another and in a couple of hours I'd generated a full alphabet of Dieter Rams-ian industrial design. So I selected a couple of hundred images and stuck them together. [There's a short (15s) video over on Vimeo](https://vimeo.com/745606590).
 
-I haven't iterated on them, post-processed them, or use AI-upscalers or anything. This is how they come out of my home PC 'raw'. It's funny because I can already feel how dated this is going to look in a few months.
+This is how they come out of my home PC 'raw'. I haven't tweaked them, post-processed them, iterrated them, or used AI-upscalers or enhancers.
 
 <!-- ![sorry to you know who](/images/dieter/dieter2.gif) -->
 
 ![this is just a machine spewing...](/images/dieter/dieter3.webp)
 
-This is an example of just how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. I have all kinds of conflicting feelings about it.
+It was just a quick experiment really. TTo see how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. And then use the model to bend the work into someting 'new'.
+
+I have all kinds of conflicting feelings about it.
 
 But as a creative who has 'control' it's pretty thrilling. But I guess so is spraying a flame-thrower around; until you realise what you've done 🔥😿.
 
@@ -22,14 +24,16 @@ But as a creative who has 'control' it's pretty thrilling. But I guess so is spr
 
 ![this is just a machine spewing...](/images/dieter/dieter2.webp)
 
-It's messed-up that the world's creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never get a penny. And the disruption it's going to cause is going to be terrible for a lot of people.
+It's messed-up that the world's creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never see a penny. This is one of those 'disruptions' that (left unchecked) is going to be very profitable for a few people and potentially disasterous for many more.
 
-But my inner optmist sees amazing potential for artists and technologists to work together. To create mind-blowing systems and tools and experiences. In ways that aren't trying to replace the creators, but to empower them and reward them for their contributions.
+On the flipside – my inner optmist sees amazing potential for artists and technologists to work together to create mind-blowing systems and tools and experiences. In ways that aren't trying to replace the creators, but to give them ways to extend their practice and reward them for their contributions.
 
-I'm hoping that interesting new companies spring up to do things like create co-operative GANs that reward artists for their work being part of the neural network - or pays them as their work gets referenced or passed through. Or some such nonsense. 
+There's all kinds of issues to solve, but I love the idea of co-operative GANs that reward artists for their work, ideas and inspiration flowing through a neural network.
 
-This stuff is getting better and better at an **alarming** rate. 
+That may sound like sci-fi nonsense, but this stuff is getting better and better at an **alarming** rate. It would be easy to dismiss this as visual novelty. As another wave of Google Collabs hit Reddit, spawning thousands of hyper-realistic warrior princesses 'trending on Artstation'. But that's like judging the entire future potential of the internet by looking at GeoCities.
 
-I'm pretty confident that within 2 years we'll be able to generate images indesinguishable from stock photos. And within 3 or 4 years we'll be able to get to convincing video clips of the same quality. Which is going to have huge implications for all kinds of industries. And unless something radical happens it feels like an inevitability. Whether it's a good idea or not.
+I'm pretty confident that within a couple of years you'll be able to generate images indesinguishable from stock photos. And within 3 or 4 years we'll be able to get to convincing totally believable video clips of the same quality. Which is going to have huge implications for all kinds of industries.
+
+If you're someone in the creative world who likes surfing the waves of what's coming next; it's time to start paddling...
 
 Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
