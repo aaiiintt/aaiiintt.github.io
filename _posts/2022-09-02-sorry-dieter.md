@@ -2,9 +2,7 @@
 layout: post
 title: Sorry Dieter
 ---
-
 <!-- ![sorry to you know who](/images/dieter/dieter1.gif) -->
-
 
 ![this is just a machine spewing...](/images/dieter/dieter1.webp)
 
@@ -14,23 +12,25 @@ I haven't iterated on them, post-processed them, or use AI-upscalers or anything
 
 <!-- ![sorry to you know who](/images/dieter/dieter2.gif) -->
 
-![this is just a machine spewing...](/images/dieter/dieter2.webp)
+![this is just a machine spewing...](/images/dieter/dieter3.webp)
 
+This is an example of just how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. I have all kinds of conflicting feelings about it.
 
-This is an example of just how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. I have mixed feelings about it.
+I hate the fact that the world's creativity is being hoovered up, having interfaces put on it, and being flogged as a subscription for $9.99. Poor Dieter will never see a bean.
 
-As a creative who has 'control over it it's pretty thrilling. But I guess so is spraying a flame-thrower around the place, until you realise what you've done 🔥😿.
-
-I'm not saying this stuff is *bad*. The technology itself is rarely at fault as the technocrats are fond of say. But we can already see people hell-bent on hoovering up the world's creativity and flogging it on subscription for $9.99. But poor Dieter won't get a bean! 
+But as a creative who has 'control' it's pretty thrilling. But I guess so is spraying a flame-thrower around; until you realise what you've done 🔥😿.
 
 <!-- ![sorry to you know who](/images/dieter/dieter3.gif) -->
 
-![this is just a machine spewing...](/images/dieter/dieter3.webp)
+![this is just a machine spewing...](/images/dieter/dieter2.webp)
 
-Things are going to get pretty wild on this front over the next few months and years. I think there's amazing potential for artists and technologists to work together to create mind-blowing systems and tools and experiences. But only if enough people from different background, interests and value systems are invited into the process.
+It's fucked up that the world's creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never get a penny. And the disruption it's going to cause is going to be terrible for a lot of people.
 
-It may be the eternal stupid optimist in me, but the potential for artists to come together feeding into communal GANs. Systems that reward artists with fractional ongoing ownership of percentages depending on how much of their DNA flows through the Neural Network. 
+But my inner optmist sees amazing potential for artists and technologists to work together. To create mind-blowing systems and tools and experiences. In ways that aren't trying to replace the creators, but to empower them and reward them for their contributions.
 
-Or some such nonsense. 
+I'm hoping that interesting new companies spring up to do things like create co-operative GANs that reward artists for their work being part of the neural network - or pays them as their work gets referenced or passed through. Or some such nonsense. 
+
+I don't know where this is going. But this stuff gets better and better at an **alaarming** rate. And I now beleive within 2 years we'll be able to generate images indesinguishable from todays stock photos. And within 3 or 4 years we'll be able to get to convincing video clips of the same quality. Imagine the computer for 'a bunch of dragons riding the waves like horses in that guiness ad but more cinematic in 3d featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and give me something that will appeal to cider drinkers'. 
+
 
 
