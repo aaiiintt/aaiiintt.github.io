@@ -30,10 +30,12 @@ On the flipside – my inner optmist sees amazing potential for artists and tech
 
 There's all kinds of issues to solve, but I love the idea of co-operative GANs that reward artists for their work, ideas and inspiration flowing through a neural network.
 
-That may sound like sci-fi nonsense, but this stuff is getting better and better at an *alarming* rate. It would be easy to dismiss this as visual novelty. As another wave of Google Collabs hit Reddit, spawning thousands of hyper-realistic warrior princesses 'trending on Artstation'. But that's like judging the entire future potential of the internet by looking at GeoCities.
+That may sound like sci-fi nonsense, but this stuff is getting better and better at an *alarming* rate. It would be easy to dismiss this as visual novelty, as yet another wave of Google Colabs hit Reddit, spawning thousands of hyper-realistic warrior princesses 'trending on Artstation'. But that's like judging the future potential of the Internet by looking at GeoCities.
 
-I'm pretty confident that within a couple of years you'll be able to generate images indesinguishable from stock photos. And within 3 or 4 years we'll be able to get to convincing totally believable video clips of the same quality. Which is going to have huge implications for all kinds of industries.
+I'm pretty confident that within a couple of years you'll be able to generate images indistinguishable from stock photos. And within 3 or 4 years we'll be able to get to convincing totally believable video clips of the same quality. Which is going to have huge implications for all kinds of industries.
 
 If you're someone in the creative world who likes surfing the waves of what's coming next; it's time to start paddling...
 
 Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
+
+![a Stable Diffusion image of a wave of dragons](/images/dieter/dragons.webp)
