@@ -28,7 +28,8 @@ But my inner optmist sees amazing potential for artists and technologists to wor
 
 I'm hoping that interesting new companies spring up to do things like create co-operative GANs that reward artists for their work being part of the neural network - or pays them as their work gets referenced or passed through. Or some such nonsense. 
 
-I don't know where this is going. But this stuff gets better and better at an **alaarming** rate. And I now beleive within 2 years we'll be able to generate images indesinguishable from todays stock photos. And within 3 or 4 years we'll be able to get to convincing video clips of the same quality. Imagine the computer for 'a bunch of dragons riding the waves like horses in that guiness ad but more cinematic in 3d featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and give me something that will appeal to cider drinkers'. 
+This stuff is getting better and better at an **alarming** rate. 
 
+I'm pretty confident that within 2 years we'll be able to generate images indesinguishable from stock photos. And within 3 or 4 years we'll be able to get to convincing video clips of the same quality. Which is going to have huge implications for all kinds of industries. And unless something radical happens it feels like an inevitability. Whether it's a good idea or not.
 
-
+Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
