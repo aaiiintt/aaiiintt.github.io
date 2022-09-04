@@ -16,15 +16,13 @@ I haven't iterated on them, post-processed them, or use AI-upscalers or anything
 
 This is an example of just how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. I have all kinds of conflicting feelings about it.
 
-I hate the fact that the world's creativity is being hoovered up, having interfaces put on it, and being flogged as a subscription for $9.99. Poor Dieter will never see a bean.
-
 But as a creative who has 'control' it's pretty thrilling. But I guess so is spraying a flame-thrower around; until you realise what you've done 🔥😿.
 
 <!-- ![sorry to you know who](/images/dieter/dieter3.gif) -->
 
 ![this is just a machine spewing...](/images/dieter/dieter2.webp)
 
-It's fucked up that the world's creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never get a penny. And the disruption it's going to cause is going to be terrible for a lot of people.
+It's messed-up that the world's creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never get a penny. And the disruption it's going to cause is going to be terrible for a lot of people.
 
 But my inner optmist sees amazing potential for artists and technologists to work together. To create mind-blowing systems and tools and experiences. In ways that aren't trying to replace the creators, but to empower them and reward them for their contributions.
 
