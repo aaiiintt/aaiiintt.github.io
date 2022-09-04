@@ -36,6 +36,6 @@ I'm pretty confident that within a couple of years you'll be able to generate im
 
 If you're someone in the creative world who likes surfing the waves of what's coming next; it's time to start paddling...
 
-Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Noisia featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
+Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Orbital featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
 
 ![a Stable Diffusion image of a wave of dragons](/images/dieter/dragons.webp)
