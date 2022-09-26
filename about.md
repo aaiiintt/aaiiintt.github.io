@@ -20,3 +20,5 @@ So this is it. A fresh start. A new platform. A new set of things to get excited
 And I've built it in a way that is super lean and super distraction free (for me and for you hopefully).
 
 Let me know what you think...
+
+a i i n @ a a i i i n t t . x y z
