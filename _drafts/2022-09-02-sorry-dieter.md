@@ -14,11 +14,11 @@ This is how they come out of my home PC 'raw'. I haven't tweaked them, post-proc
 
 ![this is just a machine spewing...](/images/dieter/dieter3.webp)
 
-It was just a quick experiment really. TTo see how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. And then use the model to bend the work into someting 'new'.
+It was just a quick experiment really. To see how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. And then use the model to bend the work into someting 'new'.
 
 I have all kinds of conflicting feelings about it.
 
-But as a creative who has 'control' it's pretty thrilling. But I guess so is spraying a flame-thrower around; until you realise what you've done 🔥😿.
+But as a creative who has 'control' it's pretty thrilling. So is spraying a flame-thrower around; until you realise what you've done 🔥😿.
 
 <!-- ![sorry to you know who](/images/dieter/dieter3.gif) -->
 
@@ -39,3 +39,5 @@ If you're someone in the creative world who likes surfing the waves of what's co
 Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Orbital featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
 
 ![a Stable Diffusion image of a wave of dragons](/images/dieter/dragons.webp)
+
+If you're interested in the topic [Chris Boyle](https://privateisland.tv) just sent me a link to [this brilliant piece from the ever-interesting David O'Reilly](https://sub.davidoreilly.com/p/the-push-of-a-button).
