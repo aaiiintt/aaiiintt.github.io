@@ -30,6 +30,6 @@ Like a true Shit Knowledge Philanthropist I'm putting the site under a [CC-0 lic
 
 This obviously doesn't mean if I embed the trailer to the new Marvel film you can rip that off - go and read [the exclusions on the link](https://creativecommons.org/publicdomain/zero/1.0/)... But if there's anything here that's useful, just take it... And let me know if you want more...
 
-I'll talk more about *why this madness?* over the coming weeks.
+I'll talk more about why this is how it is over the coming weeks.
 
 a i i n @ a a i i i n t t . x y z
