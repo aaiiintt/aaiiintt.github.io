@@ -2,7 +2,7 @@
 title:               AAIIINTT
 tagline:             ''
 description:         'IAINTAIT algo-sorted blog about all sorts'
-url:                 https://aaiiintt.github.io
+url:                 https://aaiiintt.xyz
 baseurl:             ''
 paginate:            5
 permalink:           pretty
@@ -12,7 +12,7 @@ permalink:           pretty
 # About/contact
 author:
   name:              Iain Tait
-  url:               https://twitter.com/iaintait
+  url:               https://twitter.com/aaiiintt
   email:             aiin@aaiiintt.xyz
 
 # Gems
