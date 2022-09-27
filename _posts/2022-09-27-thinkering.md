@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Joy of Thinkering
-date: 2022-09-27 14:30
+date: 2022-09-27 14:45
 ---
 
 ![a directory of thinkering random files](/images/thinkering/thinkering.webp)
