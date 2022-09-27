@@ -5,15 +5,11 @@ date: 2022-09-27 08:00
 ---
 ![Hello World](/images/hello-world/hello-world.webp)
 
-AAIIINTT is Iain Tait sorted alphabetically. 
-It was available. 
-And I wanted a "new" thing.
-
-I'm excited about [FOOD](https://food.xyz) - 
-lots of exciting stuff going on over there.
-
-But I also feel like i need to write more. 
-I need an outlet for random chuff.
+- AAIIINTT is Iain Tait sorted alphabetically. 
+- It was available. 
+- I'm excited about [FOOD](https://food.xyz) - lots of exciting stuff going on over there.
+- But I feel the need to write more. 
+- I need an outlet for random chuff.
 
 A few months ago Richard sent me this gem:
 
