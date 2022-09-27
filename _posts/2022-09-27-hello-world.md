@@ -15,9 +15,9 @@ A few months ago Richard sent me this gem:
 
 ![Shit Knowledge Philanthropist](/images/hello-world/skp.webp)
 
-We've joked about it often since. But it's not entirely un-serious. Finding ways to gift what little knowlege and access we have onto next generations of talent is a big part of what FOOD aspires to do.
+We've joked about it often since. But it's not entirely un-serious. Finding ways to give our knowledge and experience to others so they can get to good places quicker. Or avoid pointless stupidity. Or just reassure people that it's good to be unsure. Or to feel a bit weird about stuff.
 
-The idea of SKP has given me a kick up the arse to do this. And got me out of the paralysis of thinking my bloggings have to be 'for everyone'. Instead I'm blogging for a target audience of 1. It's 'younger me'. And maybe there will be some overspill. Don't count on it mind.
+And this idea of 'giving it all away, whether it's useful or not' has helped lift me out of the paralysis of thinking my bloggings have to be 'for everyone'. Instead I'm blogging for a target audience of 1 - 'younger me'. And maybe there will be residual interest for others. Don't count on it mind.
 
 Like a true Shit Knowledge Philanthropist I'm putting the site under a [CC-0 license](https://creativecommons.org/publicdomain/zero/1.0/) which means:
 
@@ -25,8 +25,10 @@ Like a true Shit Knowledge Philanthropist I'm putting the site under a [CC-0 lic
 
 > You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
-This obviously doesn't mean if I embed the trailer to the new Marvel film you can rip that off - go and read [the exclusions on the link](https://creativecommons.org/publicdomain/zero/1.0/)... But if there's anything here that's useful, just take it... And let me know if you want more...
+This obviously doesn't mean if I embed the trailer to the new Marvel film you can rip that off - go and read [the details on the link if you want to know more](https://creativecommons.org/publicdomain/zero/1.0/)... 
 
-I'll talk more about why this is how it is over the coming weeks.
+But once this gets going if there's anything here that's useful, just take it... 
+
+And let me know if you want more...
 
 a i i n @ a a i i i n t t . x y z
