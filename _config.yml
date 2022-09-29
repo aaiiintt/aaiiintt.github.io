@@ -1,8 +1,8 @@
 # Setup
 title:               AAIIINTT
 tagline:             ''
-description:         'IAINTAIT algo-sorted blog about all sorts'
-url:                 https://aaiiintt.xyz
+description:         'IAINTAIT algo-sorted blog about allsorts'
+url:                 https://www.aaiiintt.xyz
 baseurl:             ''
 paginate:            5
 permalink:           pretty
