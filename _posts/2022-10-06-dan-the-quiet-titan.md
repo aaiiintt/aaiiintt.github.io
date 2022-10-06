@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Dan. The quiet titan.
+date: 2022-10-06 08:00
 ---
-*I originally wrote this because Campaign (UK Advertising Industry publication) asked me to. I thought I could say something nice and maybe some people would read it. But now it's behind a paywall so I can't even go and see if it's the same piece. Here it is for anyone who doesn't require another subscription in their life. Sorry Campaign.*
+*I originally wrote this because Campaign (UK Advertising Industry publication) asked me to. I thought I could say something nice and maybe some people would read it. But now it's behind a paywall so I can't even go and see if it's the same piece. Here it is for anyone who doesn't require another subscription in their life. BTW everything on this site is CC-0 which means you can reproduce it / edit it / whatever without permission.*
 
 There is no doubt that Dan Wieden is a Titan of Advertising.  There isn't an Advertising lifetime hall of achievement order of the GOAT awards medal he hasn't been awarded.
 
