@@ -3,7 +3,9 @@ layout: post
 title: Dan. The quiet titan.
 date: 2022-10-06 08:00
 ---
-*I originally wrote this because Campaign (UK Advertising Industry publication) asked me to. I thought I could say something nice and maybe some people would read it. But now it's behind a paywall so I can't even go and see if it's the same piece. Here it is for anyone who doesn't require another subscription in their life. BTW everything on this site is CC-0 which means you can reproduce it / edit it / whatever without permission.*
+*I originally wrote this because Campaign (UK Advertising Industry publication) asked me to. I thought I could say something nice and maybe some people would read it. But now it's behind a paywall so I can't even go and see it. Here it is for anyone who doesn't require another subscription in their life.* 
+
+*BTW everything on this site is CC-0 which means you can reproduce it / edit it / whatever without permission.*
 
 There is no doubt that Dan Wieden is a Titan of Advertising.  There isn't an Advertising lifetime hall of achievement order of the GOAT awards medal he hasn't been awarded.
 
@@ -13,7 +15,7 @@ That wasn't Dan.
  
 Dan was an introvert. Who drove a mini. And had a mischievous twinkle in his eye. He liked reading. And being home with family. And he loved nothing more than pointing the spotlight in someone else’s direction. Or passing the mic to someone who had something to say. 
 
-Some people might think: "wow, he  had all those people love and adore him, and he was THE DUDE, even though he was an introvert". But that’s not quite right. His brilliance was because he was an introvert, not in spite of it. 
+Some people might think: "wow, he  had all those people love and adore him, and he was THE DUDE, *even though* he was an introvert". But that’s not quite right. His brilliance was precisely *because* he was an introvert, not in spite of it. 
 
 Just so we’re all on the same page; introverts need quiet time alone to focus inwards on things (it's where they get their power). Whereas extraverts get charged up with social energy, and find alone time hard. There's lots of other things that come easier or harder to introverts. As a very introverted person myself, I get it.
 
