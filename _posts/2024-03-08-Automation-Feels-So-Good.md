@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automation Feels So Good
-date:  2024-03-68 13:03:23
+date:  2024-03-08 13:03:23
 ---
 I’ve just set up the blog with an Apple Shortcut so I can just hit a ‘new blog post button’, and it fires up IA Writer with all of the ‘Front Matter’ taken care of in Jekyll.
 
