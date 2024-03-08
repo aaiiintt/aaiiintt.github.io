@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shortcuts are the Nuts
-date:  2024-03-68 13:03:37
+title: Tooting My Own Horn
+date:  2024-03-68 13:03:94
 - - -
 Oh my god.
 I’ve got this working. 
