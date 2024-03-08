@@ -8,3 +8,6 @@ I’ve just set up the blog with an Apple Shortcut so I can just hit a ‘new bl
 All I have to do is commit the changes in Git and we’re live. It’s splendid.
 
 But only a certain kind of weirdo will understand the extreme satisfaction I feel right now.
+
+![Automation](/images/orb-men/old.webp)
+
