@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphabetical Sort Animation</title>
     <style>
+        /* Basic styles for the iframe content */
         body {
             margin: 0;
-            padding: 0px; /* Added padding for demonstration */
-            overflow: hidden;
-            /* A simple background to show the canvas is transparent */
-            font-family: sans-serif;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
         }
-        /* Style the container for the p5.js sketch */
+        /* The container will fill the iframe */
         #p5-header-container {
-            width: 832px;
-            height: 250px;
+            width: 100%;
+            height: 100%;
             cursor: pointer;
         }
     </style>
     <!-- Include the p5.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <!-- Include the Tone.js library for audio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
 </head>
 <body>
 
-    <!-- 1. COPY THIS DIV to your webpage where you want the animation to appear. -->
+    <!-- The p5.js canvas will be placed inside this div -->
     <div id="p5-header-container"></div>
 
-    <!-- 2. COPY THIS SCRIPT block and place it just before your closing </body> tag. -->
     <script>
         /**
          * p5.js sketch in "instance mode".
@@ -39,6 +39,8 @@
             const initialString = "iain tait";
             const sortedString = "aaiiintt";
             let isSorted = false;
+            let container;
+            let synth, reverb, delay;
 
             class Letter {
                 constructor(char, initialPos, sortedPos) {
@@ -102,11 +104,35 @@
             }
 
             p.setup = () => {
-                let canvas = p.createCanvas(832, 250);
+                container = document.getElementById('p5-header-container');
+                let canvas = p.createCanvas(container.clientWidth, 250);
                 canvas.parent('p5-header-container');
-                // Reverted to a generic, reliable system font
                 p.textFont('Arial');
                 p.textAlign(p.CENTER, p.CENTER);
+
+                // Initialize the sound components
+                reverb = new Tone.Reverb({
+                    decay: 5, // Long reverb tail
+                    wet: 0.4
+                }).toDestination();
+
+                delay = new Tone.FeedbackDelay("16n", 0.8).connect(reverb);
+
+                synth = new Tone.Synth({
+                    oscillator: { type: 'sawtooth' },
+                    envelope: {
+                        attack: 0.5,
+                        decay: 0.6,
+                        sustain: 0.3,
+                        release: 4
+                    }
+                }).connect(delay);
+
+                initializeLetters();
+            };
+
+            p.windowResized = () => {
+                p.resizeCanvas(container.clientWidth, 250);
                 initializeLetters();
             };
 
@@ -121,7 +147,17 @@
                 }
             };
 
+            const playSound = () => {
+                // Ensure the audio context is running
+                if (Tone.context.state !== 'running') {
+                    Tone.context.resume();
+                }
+                // Trigger the synth to play a low note for a "gong" effect
+                synth.triggerAttackRelease('b1', '1n');
+            };
+
             const toggleAnimation = () => {
+                playSound(); // Play sound on every toggle
                 isSorted = !isSorted;
                 for (let letter of letters) {
                     letter.target = isSorted ? letter.sortedPos : letter.initialPos;
@@ -137,9 +173,13 @@
             };
 
             p.touchStarted = () => {
-                if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
-                    toggleAnimation();
-                    return false;
+                if (p.touches.length > 0) {
+                    const touchX = p.touches[0].x;
+                    const touchY = p.touches[0].y;
+                    if (touchX > 0 && touchX < p.width && touchY > 0 && touchY < p.height) {
+                        toggleAnimation();
+                        return false;
+                    }
                 }
             };
 
