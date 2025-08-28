@@ -7,7 +7,9 @@
     <style>
         body {
             margin: 0;
+            padding: 20px; /* Added padding for demonstration */
             overflow: hidden;
+            /* A simple background to show the canvas is transparent */
             font-family: sans-serif;
         }
         /* Style the container for the p5.js sketch */
@@ -33,15 +35,11 @@
          * @param {p5} p - The p5 instance.
          */
         const sketch = (p) => {
-            // An array to hold all our letter objects
             let letters = [];
-            // The strings we will be working with
             const initialString = "iain tait";
             const sortedString = "aaiiintt";
-            // State variable to track if the name is sorted or not
             let isSorted = false;
 
-            // The Letter class defines the behavior and appearance of each character
             class Letter {
                 constructor(char, initialPos, sortedPos) {
                     this.char = char;
@@ -103,21 +101,17 @@
                 }
             }
 
-            // Setup runs once
             p.setup = () => {
                 let canvas = p.createCanvas(832, 250);
-                // Parent the canvas to the container div
                 canvas.parent('p5-header-container');
+                // Reverted to a generic, reliable system font
                 p.textFont('Arial');
                 p.textAlign(p.CENTER, p.CENTER);
                 initializeLetters();
             };
 
-            // Draw runs in a loop
             p.draw = () => {
-                // Use clear() instead of background() for transparency
                 p.clear();
-                
                 p.textStyle(p.BOLD);
                 p.textSize(100);
 
@@ -136,11 +130,16 @@
                 }
             };
             
-            // Set the toggle function to be called on mouse press
             p.mousePressed = () => {
-                // Check if the mouse is inside the canvas bounds
                 if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
                     toggleAnimation();
+                }
+            };
+
+            p.touchStarted = () => {
+                if (p.mouseX > 0 && p.mouseX < p.width && p.mouseY > 0 && p.mouseY < p.height) {
+                    toggleAnimation();
+                    return false;
                 }
             };
 
@@ -177,7 +176,6 @@
                 p.textSize(100);
                 p.textStyle(p.BOLD);
 
-                // Use a fixed 0px padding from the left edge
                 let currentX = 0;
                 let y = p.height / 2;
 
@@ -190,7 +188,6 @@
             }
         };
 
-        // Create a new p5 instance and attach the sketch to it.
         new p5(sketch);
     </script>
 
