@@ -1,10 +1,9 @@
 # Setup
 title:               AAIIINTT
 tagline:             ''
-description:         'IAINTAIT algo-sorted blog about all sorts'
+description:         IAINTAIT algo-sorted blog about all sorts
 url:                 https://www.aaiiintt.xyz
 baseurl:             ''
-paginate:            100
 permalink:           pretty
 
 
@@ -14,10 +13,6 @@ author:
   name:              Iain Tait
   url:               https://twitter.com/aaiiintt
   email:             aiin@aaiiintt.xyz
-
-# Gems
-plugins:
-  - jekyll-paginate
 
 # Custom vars
 version:             1.1.0

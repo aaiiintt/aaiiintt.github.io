@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
   {% include head.html %}
 
-  <body class="layout-reverse">
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="current"{% endif %}>Home</a></li>
+              <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}class="current"{% endif %}>About</a></li>
+              
+          </ul>
+      </nav>
+    </header>
 
-    {% include sidebar.html %}
+    <main>
+      {{ content }}
+    </main>
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-        {{ content }}
-      </div>
-    </div>
-
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-    <script src='{{ site.baseurl }}/public/js/script.js'></script>
+    <footer>
+        <p>aaiiintt is the ai-era blog of iain tait.</p>
+        <p>All content is released under CC-0.</p>
+    </footer>
   </body>
 </html>

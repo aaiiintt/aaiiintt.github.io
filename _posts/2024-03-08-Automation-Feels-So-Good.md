@@ -9,5 +9,5 @@ All I have to do is commit the changes in Git and we’re live. It’s splendid.
 
 But only a certain kind of weirdo will understand the extreme satisfaction I feel right now.
 
-![Automation](/images/orb-men/old.webp)
+{% include image.html src="/images/orb-men/old.webp" alt="Automation" caption="Automation" %}
 

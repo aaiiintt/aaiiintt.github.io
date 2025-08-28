@@ -1,0 +1,56 @@
+# Jekyll Redesign Plan: A Swiss-Minimalist Approach
+
+This document outlines the plan to refactor the Jekyll site into a minimalist, typography-focused design. The core goal is to enhance readability and create a functional, code-centric aesthetic while preserving all existing content.
+
+---
+
+### **Phase 1: Establish the Typographic & CSS Foundation**
+
+1.  **Create New Stylesheet:** A new primary stylesheet will be created at `public/css/main.css`. This file will contain all the styling for the new design, built from the ground up.
+
+2.  **Implement Base & Reset:** `main.css` will start with a CSS reset to ensure consistency across browsers. It will then define the core body styles, establishing 'JetBrains Mono' as the universal font, setting the background/foreground colors, and enforcing a strict `max-width` for the main content container for optimal readability (`65ch`).
+
+3.  **Define Typographic Scale:** A clear and rhythmic typographic scale for headings (`h1`, `h2`), paragraphs, and links will be implemented, ensuring vertical rhythm and visual hierarchy.
+
+4.  **Remove Old CSS:** The existing stylesheets (`public/css/poole.css`, `public/css/lanyon.css`) will be deleted. The link to `syntax.css` will be retained for now, as code highlighting is a separate concern.
+
+---
+
+### **Phase 2: Rebuild the Core Layouts (`_layouts`)**
+
+1.  **Simplify `default.html`:** This file will be stripped down to its essential structure: `<html>`, `<head>`, and a `<body>` that contains a single wrapper `div` and the `{{ content }}` variable. All sidebar logic and extra containers will be removed.
+
+2.  **Rebuild `post.html`:** The post layout will be rebuilt to match the minimalist example. It will feature:
+    *   The post title (`page.title`).
+    *   A `.meta` block for date and category.
+    *   A functional ASCII divider (`────────────────────`).
+    *   The main `post-content` div for the article body.
+
+3.  **Create a Clean `page.html`:** The page layout will be a simplified version of the post layout, providing a clean canvas for content like the "About" page, likely omitting the date/category metadata.
+
+---
+
+### **Phase 3: Update Includes & Homepage**
+
+1.  **Overhaul `_includes/head.html`:**
+    *   Remove the `<link>` tags for the old `poole.css` and `lanyon.css`.
+    *   Add a `<link>` for the new `public/css/main.css`.
+    *   Add a `<link>` to Google Fonts to import 'JetBrains Mono'.
+
+2.  **Delete `_includes/sidebar.html`:** This component is part of the old design and will be removed entirely.
+
+3.  **Redesign `index.html` (Homepage):** The homepage will be updated to be a clean, vertical list of posts. It will loop through `site.posts` and display each post's title and date, linking directly to the article. The complex pagination will be removed in favor of a simple, chronological feed.
+
+---
+
+### **Phase 4: Style Code Blocks**
+
+1.  **Implement Code Styling:** The CSS for styling `pre` and `code` elements will be added to `main.css` as defined in the aesthetic guidelines. This ensures that code snippets are treated as first-class visual elements, with clean borders, backgrounds, and consistent typography.
+
+---
+
+### **Phase 5: Cleanup & Verification**
+
+1.  **Remove Unused Files:** Delete `poole.css`, `lanyon.css`, and `sidebar.html`.
+2.  **Review `_config.yml`:** Check for any theme-specific settings that are no longer relevant and can be removed.
+3.  **Final Review:** Once all changes are implemented, we will review the site to ensure all content is rendered correctly and the new design is applied consistently across all pages and posts.

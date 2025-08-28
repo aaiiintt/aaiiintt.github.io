@@ -4,7 +4,7 @@ title: The Joy of Thinkering
 date: 2022-09-27 14:45
 ---
 
-![a directory of thinkering random files](/images/thinkering/thinkering.webp)
+{% include image.html src="/images/thinkering/thinkering.webp" alt="a directory of thinkering random files" caption="a directory of thinkering random files" %}
 
 Leaving a blessed senior job full of perks and hierarchical protection has been interesting. It hasn't been a walk in the park; a lot of detangling and unlearning required.
 

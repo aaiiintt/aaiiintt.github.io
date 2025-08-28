@@ -1,0 +1,18 @@
+<div class="p5-sketch-container">
+  <iframe src="{{ '/samples/sketch.html' | relative_url }}" width="600" height="250" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<style>
+  .p5-sketch-container {
+    margin: 48px 0; /* Consistent with image container spacing */
+    max-width: 65ch; /* Consistent with content width */
+    /* Removed border and padding for a cleaner look */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .p5-sketch-container iframe {
+    display: block; /* Remove extra space below iframe */
+    width: 100%; /* Make iframe responsive within its container */
+    height: 250px; /* Fixed height, adjust as needed */
+  }
+</style>

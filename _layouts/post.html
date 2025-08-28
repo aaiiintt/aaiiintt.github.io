@@ -1,27 +1,59 @@
 ---
 layout: default
 ---
+<article>
+  <h1>{{ page.title | escape }}</h1>
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}
-  <span class="post-date">{{ page.date | date_to_string }}</span></h1>
-  {{ content }}
-</div>
+  <div class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </time>
+    {% if page.category %}
+    •
+    <a href="/blog">{{ page.category }}</a>
+    {% endif %}
+  </div>
 
-{% if site.related_posts.size >= 1 %}
-<div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h1>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <span class="post-date">{{ post.date | date_to_string }}</span>
-          </a>
-        </h1>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+  <div class="divider">────────────────────</div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div class="article-navigation">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="nav-button">← {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="nav-button">{{ page.next.title }} →</a>
+      {% endif %}
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.url }}/public/apple-touch-icon-precomposed.png{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/public/apple-touch-icon-precomposed.png"
+    }
+  },
+  "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ page.excerpt | strip_html | strip_newlines | escape }}{% endif %}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>

@@ -39,6 +39,6 @@ If you're someone in the creative world who likes surfing the waves of what's co
 
 Hey Computer, give me: 'a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Orbital featuring Brian Harvey' 30 seconds. Oh and can you make a few different versions to appeal to different audiences...'.
 
-![a Stable Diffusion image of a wave of dragons](/images/dieter/dragons.webp)
+{% include image.html src="/images/dieter/dragons.webp" alt="a Stable Diffusion image of a wave of dragons" caption="a Stable Diffusion image of a wave of dragons" %}
 
 If you're interested in the topic [Chris Boyle](https://privateisland.tv) just sent me a link to [this brilliant piece from the ever-interesting David O'Reilly](https://sub.davidoreilly.com/p/the-push-of-a-button).

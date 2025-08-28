@@ -13,7 +13,7 @@ date: 2022-09-27 08:00
 
 A few months ago Richard sent me this gem:
 
-![Shit Knowledge Philanthropist](/images/hello-world/skp.webp)
+{% include image.html src="/images/hello-world/skp.webp" alt="Shit Knowledge Philanthropist" caption="Shit Knowledge Philanthropist" %}
 
 We've joked about it often since. But it's not entirely un-serious. Finding ways to give our knowledge and experience to others so they can get to good places quicker. Or avoid pointless stupidity. Or just reassure people that it's good to be unsure. Or to feel a bit weird about stuff.
 
