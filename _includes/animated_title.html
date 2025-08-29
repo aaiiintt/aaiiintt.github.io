@@ -1,0 +1,46 @@
+<div class="animated-title-container">
+  <h1 id="letters">aaiiintt</h1>
+</div>
+
+<style>
+  .animated-title-container {
+    margin-bottom: 4rem; /* 64px - matches article spacing for visual consistency */
+    margin-top: 0;
+    max-width: 65ch;
+  }
+
+  .animated-title-container h1 {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-feature-settings: "liga" 1, "calt" 1, "ss01" 1;
+    font-variant-ligatures: common-ligatures contextual;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: #1A1A1A;
+    margin: 0;
+    user-select: none;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    .animated-title-container {
+      margin-bottom: 3rem; /* 48px - proportionally smaller but still substantial */
+      margin-top: 0;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const steps = ['aaiiintt', 'aaiitint', 'aaiittni', 'aiaitint', 'iaaitint', 'iaitnait', 'iaintait', 'iaitnait', 'iaaitint', 'aiaitint', 'aaiittni', 'aaiitint'];
+    let i = 0;
+    
+    const lettersElement = document.getElementById('letters');
+    if (lettersElement) {
+      setInterval(() => {
+        lettersElement.textContent = steps[i++ % steps.length];
+      }, 800);
+    }
+  });
+</script>

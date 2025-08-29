@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      CSS Grid best practices &middot; AAIIINTT
+    
+  </title>
+
+  
+  <link rel="canonical" href="/design/2025/08/29/css-grid-best-practices/">
+  
+
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+    <iframe id="background-iframe" src="/samples/background.html" frameborder="0" scrolling="no"></iframe>
+    <div class="site-container">
+      <header>
+        <nav>
+            <ul>
+                <li><a href="/" >Home</a></li>
+                <li><a href="/about/" >About</a></li>
+                
+            </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article>
+  <h1>CSS Grid best practices</h1>
+
+  <div class="meta">
+    <time datetime="2025-08-29T00:00:00+01:00">
+      2025-08-29
+    </time>
+    
+    •
+    <a href="/category/design">design</a>
+    
+  </div>
+
+  <div class="divider">────────────────────</div>
+
+  <div class="post-content">
+    <h1 id="css-grid-best-practices-building-robust-layouts-for-modern-web-apps">CSS Grid Best Practices: Building Robust Layouts for Modern Web Apps</h1>
+
+<p>Now here’s the thing about CSS Grid: while it’s revolutionized how we build web layouts, many developers aren’t leveraging its full potential or are implementing it in ways that could cause maintainability headaches down the road. Let’s explore the best practices that will help you create more robust, flexible grid layouts.</p>
+
+<h2 id="understanding-the-foundation">Understanding the Foundation</h2>
+
+<p>Before diving into specific techniques, we need to grasp why CSS Grid has become such a crucial tool in modern web development. The key insight is that Grid is the first true layout system built specifically for the web, allowing us to think in two dimensions rather than being constrained to linear flows.</p>
+
+<div class="image-container">
+  <img src="/images/2025-08-29-css-grid-best-practices/visual-comparison-of-flexbox-1d-vs-css-grid-2d-layout-approaches.webp" alt="Visual comparison of flexbox (1D) vs CSS Grid (2D) layout approaches" class="image-large" />
+  
+</div>
+
+<h2 id="essential-best-practices">Essential Best Practices</h2>
+
+<h3 id="1-use-semantic-grid-areas">1. Use Semantic Grid Areas</h3>
+
+<p>In practice, this means naming your grid areas in a way that reflects their content and purpose. Here’s the wrong way to do it:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="py">grid-template-areas</span><span class="p">:</span>
+    <span class="s1">"a b c"</span>
+    <span class="s1">"d e f"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>A better solution would be:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="py">grid-template-areas</span><span class="p">:</span>
+    <span class="s1">"header header header"</span>
+    <span class="s1">"sidebar main aside"</span>
+    <span class="s1">"footer footer footer"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2-embrace-css-custom-properties-for-grid-parameters">2. Embrace CSS Custom Properties for Grid Parameters</h3>
+
+<p>What’s interesting here is how custom properties can make your grid layouts more maintainable and flexible:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--grid-columns</span><span class="p">:</span> <span class="m">12</span><span class="p">;</span>
+  <span class="py">--grid-gap</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.grid-container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="n">var</span><span class="p">(</span><span class="n">--grid-columns</span><span class="p">),</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+  <span class="py">gap</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--grid-gap</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3-progressive-enhancement-and-fallbacks">3. Progressive Enhancement and Fallbacks</h3>
+
+<p>The problem with assuming Grid support everywhere is that some older browsers might not handle it well. Always include sensible fallbacks:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+  <span class="c">/* Flexbox fallback */</span>
+<span class="p">}</span>
+
+<span class="k">@supports</span> <span class="p">(</span><span class="n">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="n">auto-fit</span><span class="p">,</span> <span class="n">minmax</span><span class="p">(</span><span class="m">250px</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">));</span>
+    <span class="py">gap</span><span class="p">:</span> <span class="m">1rem</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-responsive-grid-patterns">4. Responsive Grid Patterns</h3>
+
+<p>In practice, this means using Grid’s powerful auto-placement features rather than fixed column counts:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.responsive-grid</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="n">auto-fit</span><span class="p">,</span> <span class="n">minmax</span><span class="p">(</span><span class="n">min</span><span class="p">(</span><span class="m">100%</span><span class="p">,</span> <span class="m">300px</span><span class="p">),</span> <span class="m">1</span><span class="n">fr</span><span class="p">));</span>
+  <span class="py">gap</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="image-container">
+  <img src="/images/2025-08-29-css-grid-best-practices/responsive-grid-layout-adapting-from-1-to-4-columns-at-different-breakpoints.webp" alt="Responsive grid layout adapting from 1 to 4 columns at different breakpoints" class="image-large" />
+  
+</div>
+
+<h3 id="5-content-first-grid-sizing">5. Content-First Grid Sizing</h3>
+
+<p>The key insight here is that we should let content drive our grid dimensions when possible:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.content-grid</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="n">fit-content</span><span class="p">(</span><span class="m">200px</span><span class="p">)</span> <span class="n">minmax</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">)</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="common-pitfalls-to-avoid">Common Pitfalls to Avoid</h2>
+
+<p>Here’s the thing about Grid implementations - there are several common mistakes that can limit your layout’s flexibility:</p>
+
+<ol>
+  <li>Over-nesting grid containers</li>
+  <li>Using fixed pixel values instead of flexible units</li>
+  <li>Ignoring the implicit grid</li>
+  <li>Not considering content overflow</li>
+  <li>Missing accessibility considerations</li>
+</ol>
+
+<h2 id="performance-considerations">Performance Considerations</h2>
+
+<p>What’s interesting about CSS Grid performance is that while it’s generally very efficient, certain patterns can impact rendering:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Avoid frequent grid recalculation */</span>
+<span class="nc">.dynamic-grid</span> <span class="p">{</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="n">auto-fit</span><span class="p">,</span> <span class="n">minmax</span><span class="p">(</span><span class="m">150px</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">));</span>
+  <span class="c">/* Could cause layout thrashing if content frequently changes */</span>
+<span class="p">}</span>
+
+<span class="c">/* Better for dynamic content */</span>
+<span class="nc">.stable-grid</span> <span class="p">{</span>
+  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="m">4</span><span class="p">,</span> <span class="m">1</span><span class="n">fr</span><span class="p">);</span>
+  <span class="c">/* More predictable layout behavior */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="browser-support-and-debug-tools">Browser Support and Debug Tools</h2>
+
+<p>In practice, this means testing your grid layouts across different browsers and using Firefox’s excellent Grid inspector tool for debugging.</p>
+
+<div class="image-container">
+  <img src="/images/2025-08-29-css-grid-best-practices/firefox-grid-inspector-tool-highlighting-grid-lines-and-areas.webp" alt="Firefox Grid Inspector tool highlighting grid lines and areas" class="image-large" />
+  
+</div>
+
+<h2 id="actionable-takeaways">Actionable Takeaways</h2>
+
+<ol>
+  <li>Start with semantic grid areas that reflect your content structure</li>
+  <li>Use CSS custom properties for grid parameters that might need to change</li>
+  <li>Implement progressive enhancement with proper fallbacks</li>
+  <li>Choose auto-placement and flexible units over fixed values</li>
+  <li>Test layouts across different viewport sizes and browsers</li>
+  <li>Leverage Firefox’s Grid inspector for debugging</li>
+  <li>Consider performance implications of dynamic grid patterns</li>
+</ol>
+
+<p>The future of web layouts is here with CSS Grid, but like any powerful tool, it requires thoughtful implementation. By following these best practices, you’ll create more maintainable, flexible, and robust layouts that stand the test of time and scale with your projects.</p>
+
+<p>Remember: Grid isn’t just about creating layouts - it’s about creating systems that adapt to both content and context while maintaining visual harmony across your applications.</p>
+
+  </div>
+
+  <div class="article-navigation">
+      
+        <a href="/technology/2025/08/29/ai-has-an-asshole-problem/" class="nav-button">← AI has an Asshole Problem</a>
+      
+      
+  </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "CSS Grid best practices",
+  "image": "http://localhost:4000/public/apple-touch-icon-precomposed.png",
+  "datePublished": "2025-08-29T00:00:00+01:00",
+  "dateModified": "2025-08-29T00:00:00+01:00",
+  "author": {
+    "@type": "Person",
+    "name": "Iain Tait"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AAIIINTT",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000/public/apple-touch-icon-precomposed.png"
+    }
+  },
+  "description": "CSS Grid Best Practices: Building Robust Layouts for Modern Web Apps",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:4000/design/2025/08/29/css-grid-best-practices/"
+  }
+}
+</script>
+
+      </main>
+
+      <footer>
+          <p>aaiiintt is the ai-era blog of iain tait.</p>
+          <p>All content is released under CC-0.</p>
+      </footer>
+    </div>
+  </body>
+</html>

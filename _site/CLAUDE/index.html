@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      CLAUDE.md &middot; AAIIINTT
+    
+  </title>
+
+  
+  <link rel="canonical" href="/CLAUDE/">
+  
+
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+    <iframe id="background-iframe" src="/samples/background.html" frameborder="0" scrolling="no"></iframe>
+    <div class="site-container">
+      <header>
+        <nav>
+            <ul>
+                <li><a href="/" >Home</a></li>
+                <li><a href="/about/" >About</a></li>
+                
+            </ul>
+        </nav>
+      </header>
+
+      <main>
+        <article>
+  <h1>CLAUDE.md</h1>
+  <div class="post-content">
+    <h1 id="claudemd">CLAUDE.md</h1>
+
+<p>This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.</p>
+
+<h2 id="project-overview">Project Overview</h2>
+
+<p>This is a personal blog site built with Jekyll and hosted on GitHub Pages. The site features:</p>
+<ul>
+  <li>Jekyll static site generator using the Lanyon theme (based on Poole)</li>
+  <li>Interactive p5.js sketches and visualizations</li>
+  <li>Blog posts in Markdown format</li>
+  <li>Custom CSS and JavaScript enhancements</li>
+  <li>Animated canvas backgrounds and interactive elements</li>
+</ul>
+
+<h2 id="development-commands">Development Commands</h2>
+
+<h3 id="local-development">Local Development</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> - Start local development server with live reload</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> - Build the site for production</li>
+  <li><code class="language-plaintext highlighter-rouge">bundle install</code> - Install Ruby dependencies</li>
+</ul>
+
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+  <li>Ruby gems managed via Bundler (see Gemfile)</li>
+  <li>Uses <code class="language-plaintext highlighter-rouge">github-pages</code> gem for GitHub Pages compatibility</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll-paginate</code> for pagination support</li>
+</ul>
+
+<h2 id="site-architecture">Site Architecture</h2>
+
+<h3 id="directory-structure">Directory Structure</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_posts/</code> - Blog posts in Markdown format with YAML front matter</li>
+  <li><code class="language-plaintext highlighter-rouge">_drafts/</code> - Draft posts not yet published</li>
+  <li><code class="language-plaintext highlighter-rouge">_layouts/</code> - Jekyll template layouts (default, post, page)</li>
+  <li><code class="language-plaintext highlighter-rouge">_includes/</code> - Reusable template components</li>
+  <li><code class="language-plaintext highlighter-rouge">_site/</code> - Generated static site (ignored in git)</li>
+  <li><code class="language-plaintext highlighter-rouge">images/</code> - Blog post images and media assets</li>
+  <li><code class="language-plaintext highlighter-rouge">samples/</code> - Interactive p5.js sketches and demos</li>
+  <li><code class="language-plaintext highlighter-rouge">public/</code> - Static assets (CSS, JS, icons)</li>
+</ul>
+
+<h3 id="key-files">Key Files</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_config.yml</code> - Jekyll configuration and site metadata</li>
+  <li><code class="language-plaintext highlighter-rouge">index.html</code> - Home page template</li>
+  <li><code class="language-plaintext highlighter-rouge">about.md</code> - About page content</li>
+  <li><code class="language-plaintext highlighter-rouge">samples/sketch.html</code> - Interactive p5.js animation showcase</li>
+</ul>
+
+<h3 id="custom-components">Custom Components</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_includes/p5_sketch.html</code> - Embeds p5.js sketches in blog posts via iframe</li>
+  <li><code class="language-plaintext highlighter-rouge">_includes/site_background.html</code> - Animated canvas background</li>
+  <li>Interactive text animations with sound effects using Tone.js and p5.js</li>
+</ul>
+
+<h3 id="content-management">Content Management</h3>
+<ul>
+  <li>Blog posts use standard Jekyll naming convention: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code></li>
+  <li>Images stored in <code class="language-plaintext highlighter-rouge">images/</code> with subdirectories by post topic</li>
+  <li>Interactive demos in <code class="language-plaintext highlighter-rouge">samples/</code> directory as standalone HTML files</li>
+</ul>
+
+<h3 id="styling-and-assets">Styling and Assets</h3>
+<ul>
+  <li>Custom CSS in <code class="language-plaintext highlighter-rouge">public/css/main.css</code> and <code class="language-plaintext highlighter-rouge">syntax.css</code></li>
+  <li>JavaScript functionality in <code class="language-plaintext highlighter-rouge">public/js/script.js</code></li>
+  <li>Responsive design with mobile-friendly touch interactions</li>
+</ul>
+
+<h2 id="design-philosophy">Design Philosophy</h2>
+
+<p>This site follows Swiss-Minimalism principles with code-centric typography:</p>
+
+<h3 id="core-principles">Core Principles</h3>
+<ul>
+  <li><strong>Monospaced Typography</strong>: Uses high-quality monospaced fonts (JetBrains Mono) for all text</li>
+  <li><strong>Mathematical Precision</strong>: Strict line lengths (max-width: 65ch) and rhythmic vertical spacing</li>
+  <li><strong>Functional Aesthetics</strong>: ASCII characters for dividers, celebrating terminal aesthetics</li>
+  <li><strong>Elimination of Superfluous Elements</strong>: Every element must justify its existence</li>
+  <li><strong>Jekyll Purity</strong>: Leverage Jekyll’s native features, avoid unnecessary client-side JavaScript</li>
+</ul>
+
+<h3 id="development-guidelines">Development Guidelines</h3>
+<ul>
+  <li>Write clean, semantic HTML with minimal, purposeful CSS</li>
+  <li>Hand-crafted CSS only - avoid frameworks</li>
+  <li>Prioritize readability, performance, and typographic correctness</li>
+  <li>Use programming ligatures and font-feature-settings for enhanced monospace rendering</li>
+  <li>Maintain consistent 65ch content width for optimal readability</li>
+</ul>
+
+<h2 id="site-configuration">Site Configuration</h2>
+<ul>
+  <li>Base URL: https://www.aaiiintt.xyz</li>
+  <li>Timezone: Europe/London</li>
+  <li>Author: Iain Tait (@aaiiintt)</li>
+  <li>Theme based on Lanyon/Poole with custom modifications</li>
+</ul>
+
+  </div>
+</article>
+
+      </main>
+
+      <footer>
+          <p>aaiiintt is the ai-era blog of iain tait.</p>
+          <p>All content is released under CC-0.</p>
+      </footer>
+    </div>
+  </body>
+</html>

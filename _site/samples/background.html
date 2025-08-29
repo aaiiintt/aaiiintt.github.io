@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Canvas Lines Background</title>
+        <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Place canvas behind other content */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas-background"></canvas>
+
+    <!-- Include the NoiseJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/noisejs@2.1.0/index.min.js"></script>
+
+    <script>
+        const canvas = document.getElementById("canvas-background");
+        const ctx = canvas.getContext("2d");
+
+        let noise = new Noise(Math.random());
+        let phase = 0;
+
+        // --- Final, locked-in settings ---
+        const settings = {
+            numLines: 16,
+            numLineSegments: 80, // This value was not in the GUI, kept as is.
+            amplitude: 60,
+            noiseZoom: 0.02,
+            speed: 0.002,
+            lineWidth: 2,
+            lineColor: '#fce3fa',
+            fillColor: '#f7F5f9',
+            trailAmount: 0.3
+        };
+
+        // Function to handle resizing the canvas to fill the screen
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            noise = new Noise(Math.random());
+        }
+
+        const drawLine = (ctx, startY, segments, tick) => {
+            const canvasWidth = ctx.canvas.width;
+            const canvasHeight = ctx.canvas.height;
+            const centerX = canvasWidth / 2;
+
+            ctx.beginPath();
+            ctx.moveTo(-10, startY); // Start slightly off-screen to avoid gaps
+
+            for (let i = 0; i <= segments; i++) {
+                const currentX = (canvasWidth / segments) * i;
+                const centerProximity = 1 - (Math.abs(centerX - currentX) / centerX);
+                const noiseVal = noise.perlin3(currentX * settings.noiseZoom, startY * settings.noiseZoom, tick);
+                const yOffset = centerProximity * (settings.amplitude * noiseVal);
+                const currentY = startY - yOffset;
+                ctx.lineTo(currentX, currentY);
+            }
+
+            ctx.lineTo(canvasWidth + 10, canvasHeight + 10); // End off-screen
+            ctx.lineTo(-10, canvasHeight + 10);
+            ctx.closePath();
+
+            ctx.fillStyle = settings.fillColor;
+            ctx.fill();
+
+            ctx.strokeStyle = settings.lineColor;
+            ctx.lineWidth = settings.lineWidth;
+            ctx.stroke();
+        };
+
+        const loop = () => {
+            ctx.fillStyle = `rgba(10, 15, 26, ${settings.trailAmount})`;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Start drawing from a negative position to cover the top gap
+            const lineStep = canvas.height / settings.numLines;
+            for (let i = -2; i < settings.numLines + 2; i++) {
+                const startY = lineStep * i;
+                drawLine(ctx, startY, settings.numLineSegments, phase);
+            }
+
+            phase += settings.speed;
+            requestAnimationFrame(loop);
+        };
+
+        // --- Event Listeners ---
+        window.addEventListener("resize", resizeCanvas);
+        canvas.addEventListener("click", () => {
+            noise = new Noise(Math.random());
+        });
+
+        // --- Initial Setup ---
+        resizeCanvas();
+        loop();
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<div class="text-grid-container">
+  <div class="text-grid">
+    <div class="grid-row">
+      <span>a</span><span>a</span><span>i</span><span>i</span><span>i</span><span>n</span><span>t</span><span>t</span>
+    </div>
+    <div class="grid-row">
+      <span>a</span><span>a</span><span>i</span><span>i</span><span>t</span><span>n</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>a</span><span>a</span><span>i</span><span>t</span><span>i</span><span>n</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>a</span><span>i</span><span>a</span><span>t</span><span>i</span><span>n</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>i</span><span>a</span><span>a</span><span>t</span><span>i</span><span>n</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>i</span><span>a</span><span>i</span><span>t</span><span>a</span><span>n</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>i</span><span>a</span><span>i</span><span>n</span><span>t</span><span>a</span><span>t</span><span>i</span>
+    </div>
+    <div class="grid-row">
+      <span>i</span><span>a</span><span>i</span><span>n</span><span>t</span><span>a</span><span>i</span><span>t</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .text-grid-container {
+    margin: 48px 0;
+    max-width: 65ch;
+  }
+
+  .text-grid {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+    font-feature-settings: "liga" 1, "calt" 1, "ss01" 1;
+    font-variant-ligatures: common-ligatures contextual;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: #1A1A1A;
+    user-select: none;
+  }
+
+  .grid-row {
+    display: flex;
+  }
+
+  .grid-row span {
+    display: inline-block;
+    text-align: center;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.2;
+  }
+
+  /* Mobile optimization */
+  @media (max-width: 768px) {
+    .text-grid-container {
+      margin: 32px 0;
+    }
+    
+    .text-grid {
+      font-size: 1.25rem;
+    }
+    
+    .grid-row span {
+      width: 1.1em;
+      height: 1.1em;
+    }
+  }
+
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    .text-grid {
+      font-size: 1rem;
+    }
+  }
+</style>

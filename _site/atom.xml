@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>AAIIINTT</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2025-08-29T11:30:40+01:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Iain Tait</name>
+   <email>aiin@aaiiintt.xyz</email>
+ </author>
+
+ 
+ <entry>
+   <title>CSS Grid best practices</title>
+   <link href="http://localhost:4000/design/2025/08/29/css-grid-best-practices/"/>
+   <updated>2025-08-29T00:00:00+01:00</updated>
+   <id>http://localhost:4000/design/2025/08/29/css-grid-best-practices</id>
+   <content type="html">&lt;h1 id=&quot;css-grid-best-practices-building-robust-layouts-for-modern-web-apps&quot;&gt;CSS Grid Best Practices: Building Robust Layouts for Modern Web Apps&lt;/h1&gt;
+
+&lt;p&gt;Now here’s the thing about CSS Grid: while it’s revolutionized how we build web layouts, many developers aren’t leveraging its full potential or are implementing it in ways that could cause maintainability headaches down the road. Let’s explore the best practices that will help you create more robust, flexible grid layouts.&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding-the-foundation&quot;&gt;Understanding the Foundation&lt;/h2&gt;
+
+&lt;p&gt;Before diving into specific techniques, we need to grasp why CSS Grid has become such a crucial tool in modern web development. The key insight is that Grid is the first true layout system built specifically for the web, allowing us to think in two dimensions rather than being constrained to linear flows.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/visual-comparison-of-flexbox-1d-vs-css-grid-2d-layout-approaches.webp&quot; alt=&quot;Visual comparison of flexbox (1D) vs CSS Grid (2D) layout approaches&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;essential-best-practices&quot;&gt;Essential Best Practices&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-use-semantic-grid-areas&quot;&gt;1. Use Semantic Grid Areas&lt;/h3&gt;
+
+&lt;p&gt;In practice, this means naming your grid areas in a way that reflects their content and purpose. Here’s the wrong way to do it:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&quot;a b c&quot;&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&quot;d e f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A better solution would be:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&quot;header header header&quot;&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&quot;sidebar main aside&quot;&lt;/span&gt;
+    &lt;span class=&quot;s1&quot;&gt;&quot;footer footer footer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-embrace-css-custom-properties-for-grid-parameters&quot;&gt;2. Embrace CSS Custom Properties for Grid Parameters&lt;/h3&gt;
+
+&lt;p&gt;What’s interesting here is how custom properties can make your grid layouts more maintainable and flexible:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;--grid-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;--grid-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.grid-container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--grid-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--grid-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-progressive-enhancement-and-fallbacks&quot;&gt;3. Progressive Enhancement and Fallbacks&lt;/h3&gt;
+
+&lt;p&gt;The problem with assuming Grid support everywhere is that some older browsers might not handle it well. Always include sensible fallbacks:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;flex-wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Flexbox fallback */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@supports&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;250px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-responsive-grid-patterns&quot;&gt;4. Responsive Grid Patterns&lt;/h3&gt;
+
+&lt;p&gt;In practice, this means using Grid’s powerful auto-placement features rather than fixed column counts:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.responsive-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/responsive-grid-layout-adapting-from-1-to-4-columns-at-different-breakpoints.webp&quot; alt=&quot;Responsive grid layout adapting from 1 to 4 columns at different breakpoints&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h3 id=&quot;5-content-first-grid-sizing&quot;&gt;5. Content-First Grid Sizing&lt;/h3&gt;
+
+&lt;p&gt;The key insight here is that we should let content drive our grid dimensions when possible:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.content-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fit-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;common-pitfalls-to-avoid&quot;&gt;Common Pitfalls to Avoid&lt;/h2&gt;
+
+&lt;p&gt;Here’s the thing about Grid implementations - there are several common mistakes that can limit your layout’s flexibility:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Over-nesting grid containers&lt;/li&gt;
+  &lt;li&gt;Using fixed pixel values instead of flexible units&lt;/li&gt;
+  &lt;li&gt;Ignoring the implicit grid&lt;/li&gt;
+  &lt;li&gt;Not considering content overflow&lt;/li&gt;
+  &lt;li&gt;Missing accessibility considerations&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;performance-considerations&quot;&gt;Performance Considerations&lt;/h2&gt;
+
+&lt;p&gt;What’s interesting about CSS Grid performance is that while it’s generally very efficient, certain patterns can impact rendering:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* Avoid frequent grid recalculation */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.dynamic-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* Could cause layout thrashing if content frequently changes */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* Better for dynamic content */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.stable-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* More predictable layout behavior */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;browser-support-and-debug-tools&quot;&gt;Browser Support and Debug Tools&lt;/h2&gt;
+
+&lt;p&gt;In practice, this means testing your grid layouts across different browsers and using Firefox’s excellent Grid inspector tool for debugging.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/firefox-grid-inspector-tool-highlighting-grid-lines-and-areas.webp&quot; alt=&quot;Firefox Grid Inspector tool highlighting grid lines and areas&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;actionable-takeaways&quot;&gt;Actionable Takeaways&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start with semantic grid areas that reflect your content structure&lt;/li&gt;
+  &lt;li&gt;Use CSS custom properties for grid parameters that might need to change&lt;/li&gt;
+  &lt;li&gt;Implement progressive enhancement with proper fallbacks&lt;/li&gt;
+  &lt;li&gt;Choose auto-placement and flexible units over fixed values&lt;/li&gt;
+  &lt;li&gt;Test layouts across different viewport sizes and browsers&lt;/li&gt;
+  &lt;li&gt;Leverage Firefox’s Grid inspector for debugging&lt;/li&gt;
+  &lt;li&gt;Consider performance implications of dynamic grid patterns&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The future of web layouts is here with CSS Grid, but like any powerful tool, it requires thoughtful implementation. By following these best practices, you’ll create more maintainable, flexible, and robust layouts that stand the test of time and scale with your projects.&lt;/p&gt;
+
+&lt;p&gt;Remember: Grid isn’t just about creating layouts - it’s about creating systems that adapt to both content and context while maintaining visual harmony across your applications.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AI has an Asshole Problem</title>
+   <link href="http://localhost:4000/technology/2025/08/29/ai-has-an-asshole-problem/"/>
+   <updated>2025-08-29T00:00:00+01:00</updated>
+   <id>http://localhost:4000/technology/2025/08/29/ai-has-an-asshole-problem</id>
+   <content type="html">&lt;p&gt;I was mucking around with some AI tools the other day, showing my youngest daughter how to create some genuinely amazing art with Midjourney, when she asked me something that properly stopped me in my tracks: “Dad, isn’t AI, like, really bad though?”&lt;/p&gt;
+
+&lt;p&gt;And there it was. The moment I realized we’ve got a serious perception problem on our hands. Not because AI is perfect (god forbid), but because the loudest voices in the room have managed to completely stitch up the narrative.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-we-got-here&quot;&gt;How We Got Here&lt;/h2&gt;
+
+&lt;p&gt;Here’s the thing about AI - the “bad guys” (venture capitalists, tech bros, and corporate overlords) have done such a spectacular job of making it seem utterly horrific that many of the people who &lt;em&gt;should&lt;/em&gt; be shaping its future won’t go anywhere near it. And I mean the really good ones - the artists, the activists, the creative technologists who actually give a damn about making things better.&lt;/p&gt;
+
+&lt;p&gt;They’ve managed this through what I’m calling the unholy trinity of AI anxiety:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Environmental impact (“It’s melting the ice caps!”)&lt;/li&gt;
+  &lt;li&gt;Creator exploitation (“It’s stealing your art!”)&lt;/li&gt;
+  &lt;li&gt;Bias amplification (“It’s perpetuating systemic discrimination!”)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And you know what? These aren’t entirely wrong. But they’re not the whole story either. It’s a bit odd, because while we’re all busy wringing our hands about these very real concerns, the tech bros are off building their digital death star without any meaningful opposition.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-actual-state-of-play&quot;&gt;The Actual State of Play&lt;/h2&gt;
+
+&lt;p&gt;I’ve been futzing with AI tools pretty much daily for the past year, and the reality is way more nuanced than either side wants to admit. Take the environmental impact - yes, training large language models uses a ridiculous amount of energy. But (and this is important), once they’re trained, the actual day-to-day use is surprisingly efficient.&lt;/p&gt;
+
+&lt;p&gt;Or to put it another way - your Netflix binge probably has a bigger carbon footprint than my week of AI experimentation. Not that this excuses the initial training cost, but context matters, right?&lt;/p&gt;
+
+&lt;p&gt;And then there’s the whole “stealing from artists” debate. Look, I get it. I really really do. But while we’re avoiding these tools on principle, the same corporations we’re protesting against are building proprietary systems anyway. They’re just doing it without any input from the creative community who could actually push for better attribution, compensation models, and ethical guidelines.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-ironic-twist&quot;&gt;The Ironic Twist&lt;/h2&gt;
+
+&lt;p&gt;The really wicked thing about all this? The people who are most concerned about AI’s negative impacts are exactly the people we need involved in its development. Because right now, what we’ve got is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tech bros building surveillance systems&lt;/li&gt;
+  &lt;li&gt;Corporate AI teams optimizing for engagement&lt;/li&gt;
+  &lt;li&gt;Military contractors doing… whatever the hell military contractors do&lt;/li&gt;
+  &lt;li&gt;VCs throwing money at anything with “AI” in the pitch deck&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Meanwhile, the artists, educators, activists, and genuinely thoughtful technologists are staying away because they don’t want to be part of the problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-were-missing&quot;&gt;What We’re Missing&lt;/h2&gt;
+
+&lt;p&gt;I’ve seen some properly brilliant applications of AI that never make the headlines:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Small creative studios using it to prototype ideas faster&lt;/li&gt;
+  &lt;li&gt;Artists incorporating it into their workflow (while still maintaining their unique voice)&lt;/li&gt;
+  &lt;li&gt;Educators creating personalized learning materials&lt;/li&gt;
+  &lt;li&gt;Accessibility tools that would have been impossible without AI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But these stories get drowned out by either doom-and-gloom predictions or hyped-up corporate propaganda about how AI will solve everything from climate change to male pattern baldness.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-do-we-actually-do&quot;&gt;So What Do We Actually Do?&lt;/h2&gt;
+
+&lt;p&gt;Here’s my crappy hack of a solution: We need to stop letting the assholes define the narrative. And that means getting involved, even if it feels a bit icky at first.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Start experimenting&lt;/strong&gt; - Even if you’re just mucking around with free tools, get your hands dirty. Understand what these systems can and can’t do.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Share your concerns&lt;/strong&gt; - But do it from a place of engagement rather than pure opposition. “This could be better if…” rather than “This should not exist.”&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Build the alternatives&lt;/strong&gt; - If you’re worried about bias, build less biased systems. If you’re concerned about creator rights, develop better attribution models.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Support the good actors&lt;/strong&gt; - There are people and organizations trying to do AI right. Find them, support them, amplify their work.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And most importantly, remember that technology is just a tool. It’s not inherently good or evil - it’s what we do with it that matters.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-thing-about-my-daughter&quot;&gt;The Thing About My Daughter…&lt;/h2&gt;
+
+&lt;p&gt;I ended up telling my daughter that AI is like any other powerful tool - it can be used well or badly, and the best way to make sure it’s used well is to be part of the conversation. Then we spent the afternoon creating some genuinely amazing art together, talking about attribution, and discussing how we could use these tools to make cool stuff while still supporting human artists.&lt;/p&gt;
+
+&lt;p&gt;Because that’s the thing about the future - it’s going to happen whether we engage with it or not. And I’d rather have the thoughtful, creative, ethically-minded people involved in shaping it.&lt;/p&gt;
+
+&lt;p&gt;Now go forth and make something interesting. Even if it’s just a crappy hack. Especially if it’s just a crappy hack. Because right now, we need all the thoughtful hackers we can get.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AI: The Ultimate Canvas for Neurodivergent Creativity</title>
+   <link href="http://localhost:4000/technology/2025/08/29/ai-being-the-most/"/>
+   <updated>2025-08-29T00:00:00+01:00</updated>
+   <id>http://localhost:4000/technology/2025/08/29/ai-being-the-most</id>
+   <content type="html">&lt;h1 id=&quot;ai-is-finally-letting-the-weirdos-take-over-and-its-brilliant&quot;&gt;AI is Finally Letting the Weirdos Take Over (And It’s Brilliant)&lt;/h1&gt;
+
+&lt;p&gt;I’ve been mucking around with AI tools for the past year or so, mostly making absolutely pointless stuff like getting StyleGAN to generate endless variations of my daughter’s stuffed penguin (sorry, Mr. Waddles). And you know what? It hit me the other day while I was using Midjourney to create “medieval manuscripts about robot ducks” at 3 AM - this might be the first time in tech history where the weirdos are actually leading the charge.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-ai-being-the-most/a-grid-of-ai-generated-variations-of-a-stuffed-penguin-each-increasingly-abstract-and-strange.webp&quot; alt=&quot;A grid of AI-generated variations of a stuffed penguin, each increasingly abstract and strange&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;Here’s the thing about AI right now: nobody’s written the rulebook yet. The suits haven’t figured out how to properly monetize it, the academics are still arguing about methodologies, and meanwhile, people like us - the ones who’ve always had too many tabs open in our brains - are just… making stuff. Really really good stuff, actually.&lt;/p&gt;
+
+&lt;h2 id=&quot;your-brain-on-ai-its-different-here&quot;&gt;Your Brain on AI (It’s Different Here)&lt;/h2&gt;
+
+&lt;p&gt;I know, right? For those of us who’ve always thought a bit sideways, who’ve had to explain why we’re suddenly deep-diving into Victorian-era typefaces at midnight or creating elaborate systems to categorize memes, AI feels like finally finding the right adapter for your weird brain-cable.&lt;/p&gt;
+
+&lt;p&gt;Take my mate Steve (not his real name, protecting the gloriously weird here). He’s got ADHD and has always struggled with traditional creative tools because they’re too linear, too structured. But now? He’s using GPT-4 as a bouncing board for his ideas, letting it catch his thought-fragments and spin them into new directions. Then he feeds those into Stable Diffusion, which somehow understands exactly what “make it more cronenberg-meets-cottagecore” means.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-ai-being-the-most/split-screen-comparison-of-traditional-creative-workflow-vs-ai-assisted-creative-chaos-flow-chart.webp&quot; alt=&quot;Split-screen comparison of traditional creative workflow vs. AI-assisted creative chaos flow chart&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-beautiful-chaos-of-no-rules&quot;&gt;The Beautiful Chaos of No Rules&lt;/h2&gt;
+
+&lt;p&gt;But here’s where it gets properly brilliant - because there’s no established “right way” to use these tools, every neurodivergent approach is equally valid. Want to use DALL-E to design furniture based on dreams you’ve had? Brilliant. Using AudioGen to create music from the sound of your cat purring? Wicked.&lt;/p&gt;
+
+&lt;p&gt;I’ve been futzing with this absolutely crappy hack where I:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Generate abstract shapes in Midjourney&lt;/li&gt;
+  &lt;li&gt;Feed them into ControlNet as control images&lt;/li&gt;
+  &lt;li&gt;Tell it to “see” Pokemon in them&lt;/li&gt;
+  &lt;li&gt;Use the results as album covers for AI-generated music based on the “mood” of each Pokemon&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Is it pointless? Absolutely. Has it led to some genuinely amazing bits of internet? You bet your bytes it has.&lt;/p&gt;
+
+&lt;h2 id=&quot;breaking-tools-in-the-best-way&quot;&gt;Breaking Tools in the Best Way&lt;/h2&gt;
+
+&lt;p&gt;The really incredible thing is how these tools seem to reward divergent thinking. The more you break them, the more interesting the results get. I was mucking around with language models the other day, deliberately feeding them contradictory prompts and roleplaying as a time-traveling Victorian botanist discovering modern memes. The output was… well, it was something else.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-ai-being-the-most/screenshots-of-increasingly-absurd-ai-conversations-about-victorian-meme-botany.webp&quot; alt=&quot;Screenshots of increasingly absurd AI conversations about Victorian meme botany&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;And god forbid you follow the “intended use” of any of these tools. The most interesting stuff happens when you:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stack different AI models together in ways they weren’t meant to work&lt;/li&gt;
+  &lt;li&gt;Feed the output of one system into another until something breaks&lt;/li&gt;
+  &lt;li&gt;Create feedback loops that shouldn’t work but somehow do&lt;/li&gt;
+  &lt;li&gt;Mix analog inputs with digital outputs and back again&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-human-ai-jam-session&quot;&gt;The Human-AI Jam Session&lt;/h2&gt;
+
+&lt;p&gt;It’s a bit odd, because for years we’ve been told that AI would make creativity more efficient, more streamlined. But instead, it’s making it more chaotic, more experimental, and infinitely more interesting. It’s not replacing human creativity - it’s becoming the world’s weirdest jam session partner.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen people:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Using AI to generate impossible recipes, then actually trying to cook them&lt;/li&gt;
+  &lt;li&gt;Creating entire fictional civilizations by iteratively building on AI outputs&lt;/li&gt;
+  &lt;li&gt;Making music by feeding train schedules into audio models&lt;/li&gt;
+  &lt;li&gt;Building virtual galleries where every artwork is based on misheard song lyrics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And the best part? None of these people are “AI experts” or “professional creators” - they’re just weirdos with ideas and access to tools that finally speak their language.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-now&quot;&gt;So What Now?&lt;/h2&gt;
+
+&lt;p&gt;Here’s what I reckon: we’ve got this brief, brilliant window where the weirdos can help shape what AI creativity becomes. Before the templates settle, before the best practices calcify, before someone decides there’s a “proper way” to use these tools.&lt;/p&gt;
+
+&lt;p&gt;The call to action is simple (and I know, right? Who am I to make calls to action?): Make the weird stuff. Make the things only your brain could think of. Use the tools wrong. Break them in new ways. Share your strange processes. Build communities around the unusual approaches.&lt;/p&gt;
+
+&lt;p&gt;Because right now, we’ve got this chance to make AI creativity stay weird, stay open, stay human in all our gloriously irregular ways. And that’s properly exciting.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-08-29-ai-being-the-most/a-collage-of-various-weird-ai-generated-projects-from-the-community-showcasing-the-diversity-of-approaches.webp&quot; alt=&quot;A collage of various weird AI-generated projects from the community, showcasing the diversity of approaches&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;So go on then - what’s the weirdest thing your brain’s been wanting to make? The tools are there, they’re getting better every day, and there’s absolutely no one who can tell you you’re using them wrong.&lt;/p&gt;
+
+&lt;p&gt;(Just maybe don’t generate endless variations of your kid’s favorite toy. Mr. Waddles still gives me oddly accusatory looks from the toy shelf after his brief stint as an AI muse…)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Do other people’s memories look like this?</title>
+   <link href="http://localhost:4000/fun/2024/03/28/Memories/"/>
+   <updated>2024-03-28T12:15:23+00:00</updated>
+   <id>http://localhost:4000/fun/2024/03/28/Memories</id>
+   <content type="html">&lt;p&gt;I don’t feel like this is what Microsoft were expecting when they set up the ‘on this day’ feature. What a day though. What a day…&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/onenote-memories.webp&quot; alt=&quot;Memories&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;A screenshot of OneNote memories.&lt;/div&gt;
+  
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ChatGPT Life Coaching</title>
+   <link href="http://localhost:4000/technology/2024/03/28/ChatGptLifeCoach/"/>
+   <updated>2024-03-28T09:03:23+00:00</updated>
+   <id>http://localhost:4000/technology/2024/03/28/ChatGptLifeCoach</id>
+   <content type="html">&lt;p&gt;I found this in a folder. It’s some advice from ChatGPT. Which I think I might have augmented at some point. It’s pretty good. I should try some of this…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Embrace Your Unique Strengths:&lt;/strong&gt; Creative range, an instinctive feel for technology, innovative thinking at a systemic level, clarity, calm, and an ability to hyperfocus. Identify tasks that align with these strengths and allocate dedicated time for creative work.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recognise Your Unique Challenges:&lt;/strong&gt; Sustained focus without new inputs and challenges, inconsistent attention to detail (sometimes acute, sometimes absent), issues with administrative tasks, and risk of inconsistent follow through without support.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recognise Your Points of Difference:&lt;/strong&gt; you see things in a unique way. That includes everything from, talent, ideas and systems. Sometimes this can be too much. And you need to focus on the best use of you at that moment.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Foster Collaboration:&lt;/strong&gt; Delegate tasks that don’t require your specific expertise, allowing you to focus on strategic and creative aspects. Emphasize the value of diverse perspectives and ideas.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Prioritize and Stay Organized:&lt;/strong&gt; Develop effective strategies for prioritizing tasks and managing time. Break down projects into manageable steps, use organizational tools like to-do lists or project management software, and demand clear timelines to stay focused and productive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Enhance Communication Channels:&lt;/strong&gt; Establish open and clear lines of communication within your team. Ensure expectations, goals, and project details are well-communicated, and regularly check in with team members to provide guidance and address questions. Have simple, singular platforms and stick to them. Too many ways to communicate and chaotic storage may be issues for you.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Embrace Flexibility:&lt;/strong&gt; Consider flexible work arrangements that accommodate different work styles and preferences. This may include flexible hours, remote work options, or other arrangements that support a healthy work-life balance and optimize productivity. Sprints and fallow periods maybe?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Effective Time Management:&lt;/strong&gt; Explore different time management techniques to enhance productivity. Experiment with strategies such as setting specific work intervals, using timers, or establishing structured routines to improve focus and efficiency.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Prioritize Self-Care and Stress Management:&lt;/strong&gt; Place importance on self-care practices to manage stress and overall well-being. Engage in regular exercise, practice mindfulness or meditation, and ensure you get sufficient restful sleep. Taking care of your physical and mental health is essential for success.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Seek Support and Guidance:&lt;/strong&gt; Consider working with a coach or mentor who can provide support, guidance, and accountability. They can help you navigate challenges, set goals, and provide valuable insights tailored to your unique situation.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bowie x Mary Anne Hobbs</title>
+   <link href="http://localhost:4000/music/2024/03/18/Bowie/"/>
+   <updated>2024-03-18T13:03:23+00:00</updated>
+   <id>http://localhost:4000/music/2024/03/18/Bowie</id>
+   <content type="html">&lt;p&gt;This is a great podcast. Mary Anne Hobbs is amazing. Her story is incredible…&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/mary-anne-hobbs.webp&quot; alt=&quot;Cover&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;Cover&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ra.co/exchange/729&quot;&gt;EX704 Mary Anne Hobbs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also contains this profound Bowie quote: “When you arrive at 50 you will become the person you were always supposed to be”.&lt;/p&gt;
+
+&lt;p&gt;I found that quite nice.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Automation Feels So Good</title>
+   <link href="http://localhost:4000/technology/2024/03/08/Automation-Feels-So-Good/"/>
+   <updated>2024-03-08T13:03:23+00:00</updated>
+   <id>http://localhost:4000/technology/2024/03/08/Automation-Feels-So-Good</id>
+   <content type="html">&lt;p&gt;I’ve just set up the blog with an Apple Shortcut so I can just hit a ‘new blog post button’, and it fires up IA Writer with all of the ‘Front Matter’ taken care of in Jekyll.&lt;/p&gt;
+
+&lt;p&gt;All I have to do is commit the changes in Git and we’re live. It’s splendid.&lt;/p&gt;
+
+&lt;p&gt;But only a certain kind of weirdo will understand the extreme satisfaction I feel right now.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/orb-men/old.webp&quot; alt=&quot;Automation&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;Automation&lt;/div&gt;
+  
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mix1</title>
+   <link href="http://localhost:4000/music/2023/01/09/mix1/"/>
+   <updated>2023-01-09T00:15:00+00:00</updated>
+   <id>http://localhost:4000/music/2023/01/09/mix1</id>
+   <content type="html">&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/mix1/tape.webp&quot; alt=&quot;Tape&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;Tape&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;If you want to listen &lt;a href=&quot;https://www.mixcloud.com/iaintait/aaiiintt-mix1/&quot;&gt;the mix is hosted over on MixCloud&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Progress?</title>
+   <link href="http://localhost:4000/culture/2022/10/13/progress/"/>
+   <updated>2022-10-13T11:00:00+01:00</updated>
+   <id>http://localhost:4000/culture/2022/10/13/progress</id>
+   <content type="html">&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/progress/lambo.webp&quot; alt=&quot;Progress&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;Progress&lt;/div&gt;
+  
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dan. The quiet titan.</title>
+   <link href="http://localhost:4000/culture/2022/10/06/dan-the-quiet-titan/"/>
+   <updated>2022-10-06T08:00:00+01:00</updated>
+   <id>http://localhost:4000/culture/2022/10/06/dan-the-quiet-titan</id>
+   <content type="html">&lt;p&gt;There is no doubt that Dan Wieden is a Titan of Advertising.  There isn’t an Advertising lifetime hall of achievement order of the GOAT awards medal he hasn’t been awarded.&lt;/p&gt;
+
+&lt;p&gt;But if you close your eyes and try to visualise a Titan of Advertising. What do you see? Confidence? Don Draper? Fancy car? Ego the size of a donkey? Center-of-attention types? Holding court on a fancy terrace in Cannes? They love holding court! Or schmoozing clients with lobsters and the like?&lt;/p&gt;
+
+&lt;p&gt;That wasn’t Dan.&lt;/p&gt;
+
+&lt;p&gt;Dan was an introvert. Who drove a mini. And had a mischievous twinkle in his eye. He liked reading. And being home with family. And he loved nothing more than pointing the spotlight in someone else’s direction. Or passing the mic to someone who had something to say.&lt;/p&gt;
+
+&lt;p&gt;Some people might think: “wow, he  had all those people love and adore him, and he was THE DUDE, &lt;em&gt;even though&lt;/em&gt; he was an introvert”. But that’s not quite right. His brilliance was precisely &lt;em&gt;because&lt;/em&gt; he was an introvert, not in spite of it.&lt;/p&gt;
+
+&lt;p&gt;Just so we’re all on the same page; introverts need quiet time alone to focus inwards on things (it’s where they get their power). Whereas extraverts get charged up with social energy, and find alone time hard. There’s lots of other things that come easier or harder to introverts. As a very introverted person myself, I get it.&lt;/p&gt;
+
+&lt;p&gt;I remember talking to him after Quiet came out (the brilliant Susan Cain book on introverts). We were laughing about the ‘terror of small talk at events’. And the tactic of finding someone you can talk to about real stuff. Then clinging to them as your escape from the ‘networking’. And how an intense conversation becomes like a safety bubble surrounding you.&lt;/p&gt;
+
+&lt;p&gt;And that’s how he made you feel if you were lucky enough to have a one-on-one with him. Like you were in a fascinating safe bubble. He was an absolute master of conversation. If dialogue was a game of tennis. He could move the ball round the court like a limber Björn Borg. He could do high culture, low culture, sport, politics, funny stories, technology, neuroscience, family, advanced mathematics, poetry, climate change, art, and pies. All in one lunch. But that conversation was a one-off. It was a live improvisation. It was jazz with words and ideas.&lt;/p&gt;
+
+&lt;p&gt;If someone else got into the groove with him the topics would be totally different. But the liveliness of his brain and his ability to jump between ideas and topics would be as vibrant. And this made for inspiring, profound, and difficult to summarize conversations. I’d often walk away with my brain ‘feeling fizzy’ often with no idea why. He had an ability to carbonate your head and your heart.&lt;/p&gt;
+
+&lt;p&gt;He was so skilled at these one-to-one conversations you’d see people leaving his office beaming. Having just agreed to move to Tokyo, Shanghai or Sao Paulo. Not quite sure what had happened. But feeling delighted about it.&lt;/p&gt;
+
+&lt;p&gt;Out in the world it was interesting to see how Dan played ‘the room’ at events. He wouldn’t gravitate to people he already knew. He would of course spend time with clients if someone asked. But he definitely wouldn’t head over to the corner where industry bigwigs were hanging out by choice. Instead you’d often see him deep in discussion with one of the interns, or the person delivering the mail.&lt;/p&gt;
+
+&lt;p&gt;He seemed drawn to people who were a bit lost, out of place, or different. Less magnetized by the confident looking kids from ad school - the ones who most sought his approval. They had to work harder to get noticed. He never told me this, but my theory was that they were OK. They had well developed voices already. And they were more than robust enough for agency life. He wanted to hear from the quiet ones on the edges who didn’t quite fit in. And make sure they got a shot.&lt;/p&gt;
+
+&lt;p&gt;I think this was because the ‘untrained’ people had unexpected stories and experiences to share. And most crucially voices to discover. Voices and ideas unsullied by advertising. And that’s where he got his kicks. Helping people find their voice.&lt;/p&gt;
+
+&lt;p&gt;But finding and developing the misfits wasn’t just for fun, or charity. Dan was a canny businessman. Flexing unexpected talent gets you to fresh work, and makes good margins. And that’s what made Dan so formidable. He would find a natural harmony between doing what’s right, and doing what’s good for business. Helping people develop their point of view, and selling this fresh talent to brands.&lt;/p&gt;
+
+&lt;p&gt;And although his financial acumen was strong. The success and money were a consequence of great work. And great work was a consequence of great people. People who’d been given the right support. And a remarkable culture that encouraged them to be themselves and to swing for the fences.&lt;/p&gt;
+
+&lt;p&gt;And that’s what he built. A cathedral of creativity in Portland. Where he installed a fun, empowering, supportive, decent, culture. Then added in a super high creative bar that people felt duty-bound to live up to. And that’s an intoxicating and winning combination. Which then got duplicated around the world in places that made sense.&lt;/p&gt;
+
+&lt;p&gt;That was never a formula as such. In fact Dan was not a fan of process at all.. He believed chaos bred creativity. And that following process would lead to lazy bland work. It’s hard to dispute his hypothesis when you look at the work that comes out of the place.&lt;/p&gt;
+
+&lt;p&gt;While there was definitely no patented 6-stage process. There were some ways of doing things. The famous OG ‘only rules’ at W+K say:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Don’t act big.&lt;/li&gt;
+  &lt;li&gt;No sharp stuff.&lt;/li&gt;
+  &lt;li&gt;Follow derections (sic).&lt;/li&gt;
+  &lt;li&gt;And shut up when someone else is talking.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you look at those rules they’re whispering quietly: “it’s OK to be an introvert here”. And it really was. There were plenty of quiet spaces. Lots of private offices. And lots of the ways of working are introvert friendly. And you wonder why the writing from Portland has been so exceptional for 40 years?&lt;/p&gt;
+
+&lt;p&gt;Wieden+Kennedy was Dan’s way of giving everyone a voice. Especially the quiet ones. The overlooked. The marginalised. And the just plain weird.&lt;/p&gt;
+
+&lt;p&gt;That’s the kind of thing a real Titan of Advertising would do.&lt;/p&gt;
+
+&lt;p&gt;So next time someone asks you to imagine a Titan, forget Don Draper. Instead think of a little guy with a gray goatee. Driving off in a red Mini. Sticking his tongue out. On his way home to read a book.&lt;/p&gt;
+
+&lt;p&gt;Miss you x&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sorry Dieter</title>
+   <link href="http://localhost:4000/design/2022/09/29/sorry-dieter/"/>
+   <updated>2022-09-29T08:00:00+01:00</updated>
+   <id>http://localhost:4000/design/2022/09/29/sorry-dieter</id>
+   <content type="html">&lt;!-- ![sorry to you know who](/images/dieter/dieter1.gif) --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dieter/dieter1.webp&quot; alt=&quot;this is just a machine spewing...&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was playing with Stable Diffusion to make ‘things in the shape of letters’. One thing led to another and in a couple of hours I’d generated a full alphabet of Dieter Rams-ian industrial design. So I selected a couple of hundred images and stuck them together. &lt;a href=&quot;https://vimeo.com/745606590&quot;&gt;There’s a short (15s) video over on Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is how they come out of my home PC ‘raw’. I haven’t tweaked them, post-processed them, iterrated them, or used AI-upscalers or enhancers.&lt;/p&gt;
+
+&lt;!-- ![sorry to you know who](/images/dieter/dieter2.gif) --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dieter/dieter3.webp&quot; alt=&quot;this is just a machine spewing...&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was just a quick experiment really. To see how much you can extract the influence of a particular artist / designer / creative within a generalised data-set. And then use the model to bend the work into someting ‘new’.&lt;/p&gt;
+
+&lt;p&gt;I have all kinds of conflicting feelings about it.&lt;/p&gt;
+
+&lt;p&gt;But as a creative who has ‘control’ it’s pretty thrilling. So is spraying a flame-thrower around; until you realise what you’ve done 🔥😿.&lt;/p&gt;
+
+&lt;!-- ![sorry to you know who](/images/dieter/dieter3.gif) --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dieter/dieter2.webp&quot; alt=&quot;this is just a machine spewing...&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s messed-up that the world’s creativity is being hoovered up, fed to a computer, having interfaces put on it, and being flogged as a subscription for $9.99. And Dieter will never see a penny. This is one of those ‘disruptions’ that (left unchecked) is going to be very profitable for a few people and potentially disasterous for many more.&lt;/p&gt;
+
+&lt;p&gt;On the flipside – my inner optmist sees amazing potential for artists and technologists to work together to create mind-blowing systems and tools and experiences. In ways that aren’t trying to replace the creators, but to give them ways to extend their practice and reward them for their contributions.&lt;/p&gt;
+
+&lt;p&gt;There’s all kinds of issues to solve, but I love the idea of co-operative GANs that reward artists for their work, ideas and inspiration flowing through a neural network.&lt;/p&gt;
+
+&lt;p&gt;That may sound like sci-fi nonsense, but this stuff is getting better and better at an &lt;em&gt;alarming&lt;/em&gt; rate. It would be easy to dismiss this as visual novelty, as yet another wave of Google Colabs hit Reddit, spawning thousands of hyper-realistic warrior princesses ‘trending on Artstation’. But that’s like judging the future potential of the Internet by looking at GeoCities.&lt;/p&gt;
+
+&lt;p&gt;I’m pretty confident that within a couple of years you’ll be able to generate images indistinguishable from stock photos. And within 3 or 4 years we’ll be able to get to convincing totally believable video clips of the same quality. Which is going to have huge implications for all kinds of industries.&lt;/p&gt;
+
+&lt;p&gt;If you’re someone in the creative world who likes surfing the waves of what’s coming next; it’s time to start paddling…&lt;/p&gt;
+
+&lt;p&gt;Hey Computer, give me: ‘a bunch of dragons riding the waves like horses in that guiness advert featuring a track that sounds like Orbital featuring Brian Harvey’ 30 seconds. Oh and can you make a few different versions to appeal to different audiences…’.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/dieter/dragons.webp&quot; alt=&quot;a Stable Diffusion image of a wave of dragons&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;a Stable Diffusion image of a wave of dragons&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;If you’re interested in the topic &lt;a href=&quot;https://privateisland.tv&quot;&gt;Chris Boyle&lt;/a&gt; just sent me a link to &lt;a href=&quot;https://sub.davidoreilly.com/p/the-push-of-a-button&quot;&gt;this brilliant piece from the ever-interesting David O’Reilly&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Joy of Thinkering</title>
+   <link href="http://localhost:4000/technology/2022/09/27/thinkering/"/>
+   <updated>2022-09-27T14:45:00+01:00</updated>
+   <id>http://localhost:4000/technology/2022/09/27/thinkering</id>
+   <content type="html">&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/thinkering/thinkering.webp&quot; alt=&quot;a directory of thinkering random files&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;a directory of thinkering random files&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;Leaving a blessed senior job full of perks and hierarchical protection has been interesting. It hasn’t been a walk in the park; a lot of detangling and unlearning required.&lt;/p&gt;
+
+&lt;p&gt;But one of the biggest ‘ups’ has been protecting a bit more time and space to “tinker” with things. And the realisation that when I start taking things to pieces and playing with them my brain comes alive in a way that it doesn’t when I’m purely in a theoretical / conceptual mode.&lt;/p&gt;
+
+&lt;p&gt;I was talking to Aaron Koblin about the importance of “hands on keyboard” time and how it’s something you typically get less and less of as you become more senior. And at some point the made-up-word “Thinkering” fell out of my mouth. I hate it for it’s twee-ness, even though it perfectly describes what I’m talking about. It’s like technology doodling. Thinking while you tinker.&lt;/p&gt;
+
+&lt;p&gt;Whether it’s creating an AI version of my speech patterns, making a metahuman to do my bidding in the Metaverse, hooking up an intelligent chatbot to an 0800 number, putting glitchy animated GIFs into AR, putting a 3d portal in the garden using Snapchat lens studio, creating an e-ink zine on the Kindle, using VJ software to edit video, etc.&lt;/p&gt;
+
+&lt;p&gt;For a while I was almost embarrassed by the list of utterly pointless hacky mini-projects that I was spinning up. None of them getting resolved. Lots of them going absolutely nowhere; certainly not to a place where they’d impress a skilled practitioner.&lt;/p&gt;
+
+&lt;p&gt;It’s taken me a while to realise the output isn’t what’s important. It’s the consistency and the “practice” of thinkering which is key (I don’t hate it any less the more I use it BTW).&lt;/p&gt;
+
+&lt;p&gt;The act of making each one of these pointless things has opened my mind to how underlying systems and technologies work. And perhaps more importantly how things fit together. It’s reminded me that pretty much everything is software. And now you can buy any part of the supply chain as a service it’s possible to code new physical realities.&lt;/p&gt;
+
+&lt;p&gt;In my role I don’t NEED to be able to DO any of this. But I’m certain my ideas are more interesting / more geeky / more expansive / more systematic as a result.&lt;/p&gt;
+
+&lt;p&gt;If anyone is interested, the areas I’ve been mostly tinkering with are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ML / AI&lt;/li&gt;
+  &lt;li&gt;3D / Game Engines / XR&lt;/li&gt;
+  &lt;li&gt;No-code / Lo-code&lt;/li&gt;
+  &lt;li&gt;Automation&lt;/li&gt;
+  &lt;li&gt;“Live”&lt;/li&gt;
+  &lt;li&gt;GitHub (collaboration at scale)&lt;/li&gt;
+  &lt;li&gt;Audio reactivity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And let’s not forget Web3. Sure it’s having its “crisis” moment. But isn’t this just the perfect embodiment of the hype cycle?&lt;/p&gt;
+
+&lt;p&gt;Whether Web3 arrives in the way the evangelists had dreamed. Or something else. At least I know some of the ups and downs of adding an NFT lock to a piece of content 😉.&lt;/p&gt;
+
+&lt;p&gt;If anyone fancies some kind of odd Thinkerer’s Anonymous meetup let me know 😜, especially keen to hear from equally unskilled practitioners.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://localhost:4000/culture/2022/09/27/hello-world/"/>
+   <updated>2022-09-27T08:00:00+01:00</updated>
+   <id>http://localhost:4000/culture/2022/09/27/hello-world</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/hello-world/hello-world.webp&quot; alt=&quot;Hello World&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AAIIINTT is Iain Tait sorted alphabetically.&lt;/li&gt;
+  &lt;li&gt;It was available.&lt;/li&gt;
+  &lt;li&gt;I’m excited about &lt;a href=&quot;https://food.xyz&quot;&gt;FOOD&lt;/a&gt; - lots of exciting stuff going on over there.&lt;/li&gt;
+  &lt;li&gt;But I feel the need to write more.&lt;/li&gt;
+  &lt;li&gt;I need an outlet for random chuff.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A few months ago Richard sent me this gem:&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/hello-world/skp.webp&quot; alt=&quot;Shit Knowledge Philanthropist&quot; class=&quot;image-large&quot; /&gt;
+  
+    &lt;div class=&quot;image-caption&quot;&gt;Shit Knowledge Philanthropist&lt;/div&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;We’ve joked about it often since. But it’s not entirely un-serious. Finding ways to give our knowledge and experience to others so they can get to good places quicker. Or avoid pointless stupidity. Or just reassure people that it’s good to be unsure. Or to feel a bit weird about stuff.&lt;/p&gt;
+
+&lt;p&gt;And this idea of ‘giving it all away, whether it’s useful or not’ has helped lift me out of the paralysis of thinking my bloggings have to be ‘for everyone’. Instead I’m blogging for a target audience of 1 - ‘younger me’. And maybe there will be residual interest for others. Don’t count on it mind.&lt;/p&gt;
+
+&lt;p&gt;Like a true Shit Knowledge Philanthropist I’m putting the site under a &lt;a href=&quot;https://creativecommons.org/publicdomain/zero/1.0/&quot;&gt;CC-0 license&lt;/a&gt; which means:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This obviously doesn’t mean if I embed the trailer to the new Marvel film you can rip that off - go and read &lt;a href=&quot;https://creativecommons.org/publicdomain/zero/1.0/&quot;&gt;the details on the link if you want to know more&lt;/a&gt;…&lt;/p&gt;
+
+&lt;p&gt;But once this gets going if there’s anything here that’s useful, just take it…&lt;/p&gt;
+
+&lt;p&gt;And let me know if you want more…&lt;/p&gt;
+
+&lt;p&gt;a i i n @ a a i i i n t t . x y z&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

@@ -1,0 +1,53 @@
+# My Writing Style Guide
+
+## Voice & Tone
+- Write in first person or direct address to reader
+- Conversational but authoritative
+- Technical but accessible - explain complex concepts clearly
+- Use humor sparingly, keep it dry and relevant
+- Avoid buzzwords and marketing speak
+- Be opinionated when appropriate
+
+## Content Structure Preferences
+- Start with context or problem statement
+- Use concrete examples and real-world scenarios
+- Include code examples when discussing technical topics
+- Break up long sections with subheadings
+- End with actionable takeaways or conclusions
+- Use bullet points and lists for clarity
+
+## Technical Writing Approach
+- Explain the "why" before diving into "how"
+- Reference web standards and best practices
+- Include browser support considerations when relevant
+- Show both right and wrong approaches
+- Use semantic HTML examples
+- Focus on practical implementation
+
+## Common Phrases and Transitions I Use
+- "Here's the thing about..."
+- "The key insight is..."
+- "In practice, this means..."
+- "What's interesting here is..."
+- "The problem with this approach..."
+- "A better solution would be..."
+
+## Topics I Care About
+- Web performance and optimization
+- CSS architecture and methodologies
+- JavaScript patterns and best practices
+- Accessibility and inclusive design
+- Developer experience and tooling
+- Design systems and component libraries
+
+## Post Length Guidelines
+- Short posts (500-800 words): Single concept, focused exploration
+- Medium posts (1000-1500 words): Thorough explanation with examples
+- Long posts (2000+ words): Comprehensive deep-dive with multiple examples
+
+## Code Style Preferences
+- Use semantic, descriptive variable names
+- Include comments explaining non-obvious logic
+- Show complete, working examples when possible
+- Prefer modern JavaScript (ES6+) syntax
+- Use CSS custom properties for maintainable styles

@@ -10,7 +10,7 @@ layout: default
     </time>
     {% if page.category %}
     •
-    <a href="/blog">{{ page.category }}</a>
+    <a href="/category/{{ page.category | slugify }}">{{ page.category }}</a>
     {% endif %}
   </div>
 

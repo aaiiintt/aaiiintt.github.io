@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1 class="category-title">Category: {{ page.category | capitalize }}</h1>
+
+<div class_="posts">
+  {% for post in site.categories[page.category] %}
+    <article class="post-item">
+      <h2>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h2>
+      <div class="meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </time>
+      </div>
+    </article>
+  {% endfor %}
+</div>

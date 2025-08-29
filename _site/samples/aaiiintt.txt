@@ -1,0 +1,8 @@
+a a i i i n t t
+a a i i t n t i
+a a i t i n t i
+a i a t i n t i
+i a a t i n t i
+i a i t a n t i
+i a i n t a t i
+i a i n t a i t

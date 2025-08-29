@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sorry Dieter
+category: design
 date: 2022-09-29 08:00
 ---
 <!-- ![sorry to you know who](/images/dieter/dieter1.gif) -->

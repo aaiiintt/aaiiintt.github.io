@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ChatGPT Life Coaching
+category: technology
 date:  2024-03-28 09:03:23
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Joy of Thinkering
+category: technology
 date: 2022-09-27 14:45
 ---
 

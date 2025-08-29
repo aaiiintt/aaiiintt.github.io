@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dan. The quiet titan.
+category: culture
 date: 2022-10-06 08:00
 ---
 There is no doubt that Dan Wieden is a Titan of Advertising.  There isn't an Advertising lifetime hall of achievement order of the GOAT awards medal he hasn't been awarded.
