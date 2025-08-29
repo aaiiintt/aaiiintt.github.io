@@ -8,23 +8,30 @@
 html {
     font-size: 16px;
     line-height: 1.6;
+    height: 100%; /* Ensure html takes full height */
 }
 
 body {
     font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
     font-feature-settings: "liga" 1, "calt" 1, "ss01" 1;
     font-variant-ligatures: common-ligatures contextual;
-    background-color: #FEFEFE;
+    background-color: #FEFEFE; /* Keep a fallback background color */
     color: #1A1A1A;
-    max-width: 832px;
-    margin: 0 auto;
-    padding: 32px;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    padding: 0; /* Remove padding from body, it will be on site-container */
 }
 
 @media (max-width: 768px) {
     body {
-        padding: 16px;
+        padding: 16px; /* This media query will still apply padding to body on small screens */
     }
+}
+
+/* Site Container for main content */
+.site-container {
+    max-width: 832px;
+    margin: 0 auto;
+    padding: 32px;
 }
 
 /* Typography */
@@ -256,4 +263,22 @@ table th, table td {
     color: #666666;
     margin-top: 8px;
     text-align: center;
+}
+
+/* Background iframe styles */
+#background-iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    z-index: -1; /* Place behind other content */
+    border: none; /* Ensure no border */
+}
+
+/* Ensure main content has a background to be readable over the iframe */
+main {
+    background-color: transparent; /* Make main content transparent */
+    position: relative; /* To ensure z-index works correctly for content */
+    z-index: 1; /* Place above the background iframe */
 }
