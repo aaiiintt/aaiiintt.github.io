@@ -2,10 +2,10 @@
 category: technology
 date: '2025-09-01'
 layout: post
-title: When My AI Experiments Went Brilliantly Wrong
+title: You're thinking about AI all wrong
 ---
 
-We're thinking about AI all wrong. Not just a bit wrong - fundamentally missing the point. While everyone's obsessed with getting ChatGPT to write their emails or Midjourney to generate their logo concepts, they're overlooking something properly incredible: we've basically got a creative collaborator with access to the entire scope of human knowledge and culture.
+We all are. We're all thinking about AI all wrong. Not just a bit wrong - fundamentally missing the point. While everyone's obsessed with getting ChatGPT to write their emails or Midjourney to generate their logo concepts, they're overlooking something remarkable: we've basically got a creative collaborator with access to the entire scope of human knowledge and culture.
 
 {% include image.html src="/images/2025-09-01-when-my-ai-experiments-went-brilliantly-wrong/abstract-visualization-showing-interconnected-nodes-representing-human-knowledge-with-creative-possibilities-branching-out.webp" alt="Abstract visualization showing interconnected nodes representing human knowledge, with creative possibilities branching out" %}
 

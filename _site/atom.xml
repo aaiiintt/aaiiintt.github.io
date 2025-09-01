@@ -4,7 +4,7 @@
  <title>AAIIINTT</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-09-01T10:49:02+01:00</updated>
+ <updated>2025-09-01T10:56:29+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Iain Tait</name>
@@ -13,11 +13,11 @@
 
  
  <entry>
-   <title>When My AI Experiments Went Brilliantly Wrong</title>
+   <title>You're thinking about AI all wrong</title>
    <link href="http://localhost:4000/technology/2025/09/01/when-my-ai-experiments-went-brilliantly-wrong/"/>
    <updated>2025-09-01T00:00:00+01:00</updated>
    <id>http://localhost:4000/technology/2025/09/01/when-my-ai-experiments-went-brilliantly-wrong</id>
-   <content type="html">&lt;p&gt;We’re thinking about AI all wrong. Not just a bit wrong - fundamentally missing the point. While everyone’s obsessed with getting ChatGPT to write their emails or Midjourney to generate their logo concepts, they’re overlooking something properly incredible: we’ve basically got a creative collaborator with access to the entire scope of human knowledge and culture.&lt;/p&gt;
+   <content type="html">&lt;p&gt;We all are. We’re all thinking about AI all wrong. Not just a bit wrong - fundamentally missing the point. While everyone’s obsessed with getting ChatGPT to write their emails or Midjourney to generate their logo concepts, they’re overlooking something remarkable: we’ve basically got a creative collaborator with access to the entire scope of human knowledge and culture.&lt;/p&gt;
 
 &lt;div class=&quot;image-container&quot;&gt;
   &lt;img src=&quot;/images/2025-09-01-when-my-ai-experiments-went-brilliantly-wrong/abstract-visualization-showing-interconnected-nodes-representing-human-knowledge-with-creative-possibilities-branching-out.webp&quot; alt=&quot;Abstract visualization showing interconnected nodes representing human knowledge, with creative possibilities branching out&quot; class=&quot;image-large&quot; /&gt;
