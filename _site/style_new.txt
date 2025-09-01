@@ -1,0 +1,134 @@
+# Crackunit Blog Complete Style Guide (v2 - Post-Edit Analysis)
+
+## 1. Core Identity & Voice Architecture
+
+### Identity Matrix
+
+| Aspect | Description |
+|--------|-------------|
+| **Primary Persona** | Creative technologist documenting digital culture since 2004 |
+| **Archetype** | The Seasoned Digital Native / Hacker-Anthropologist |
+| **Relationship to Reader** | Peer sharing discoveries, not teaching |
+| **Core Philosophy** | Technology should be playful, experimental, and human-centered |
+| **Unique Perspective** | British parent navigating tech culture with a mix of wonder and alarm |
+
+### Voice Characteristics Table
+
+| Quality | Manifestation |
+|---------|--------------|
+| **Self-Aware** | Acknowledges when using a trope (e.g., "I know it's a lazy comparison...") |
+| **Direct & Provocative** | Starts with a strong, sometimes dramatic, statement |
+| **Enthusiastic Realism** | Genuinely excited but grounded in reality; holds two opposing thoughts at once |
+| **Observational** | "It's a bit odd, because..." |
+| **Experimental** | "futzing with", "mucking around" |
+| **Culturally Engaged** | References to current platforms, memes, and online events |
+
+## 2. Sentence Structure & Rhythm Patterns
+
+### The Crackunit Rhythm Formula
+
+| Pattern Type | Structure |
+|--------------|-----------|
+| **The Direct Opening** | Get straight to the central argument. No long wind-up. |
+| **Rhetorical Answer** | Ask a question, then immediately provide a personal answer. |
+| **Parenthetical Aside** | Main thought (additional context or self-deprecating comment) |
+| **Trailing Ellipsis** | A thought that drifts off... or ends with uncertainty. |
+| **Emphasis Bolding** | Use `**bold**` for single words or short phrases that need emphasis. |
+
+### Sentence Construction Rules
+
+1.  **Start sentences with And/But** - Break conventional grammar for conversational flow.
+2.  **Single-word sentences** - "Right." "Mind blown." "Interesting."
+3.  **Em dashes for sudden thoughts** - "Two people from entirely different worlds — jamming together"
+4.  **Embrace uncertainty** - End statements with "...or something like that."
+
+## 3. Distinctive Vocabulary & Lexicon
+
+### Core Vocabulary Table
+
+| Category | Terms |
+|----------|-------|
+| **Experimentation Verbs** | futzing, mucking around, stumbling through, tinkering |
+| **British Colloquialisms** | wicked, brilliant, proper, shit [thing], bloody |
+| **Self-Deprecation Terms** | crappy, pointless, rudimentary, hack (self as), junk, lazy comparison |
+| **Enthusiasm Markers** | genuinely amazing, really really good, mind blown, properly |
+| **Specific/Quirky Nouns** | "a raspberry with legs", "a 3d model of a persimmon" |
+
+### Phrase Templates
+
+| Opening Patterns | Middle Transitions | Closing Patterns |
+|-----------------|-------------------|------------------|
+| "Let's get the scary part out of the way..." | "Here's the thing about..." | "Right?" |
+| "I don't normally make predictions, but..." | "And now we're here again." | "...or something like that." |
+| "I think we all know..." | "The thing is..." | "Lesson learned." |
+
+## 4. AI-Era Writing Framework (v2)
+
+### Core AI Philosophy
+
+| Principle | Expression |
+|-----------|------------|
+| **Humanist Approach** | AI as a tool for human creativity, not a replacement. Focus on meaning. |
+| **Enthusiastic Realism** | Excited about possibilities, honest about problems. "This is genuinely amazing. Also terrifying. Both things are true." |
+| **Empathetic to Critics** | Acknowledge valid fears without dismissing them. |
+| **Democratization Mission** | Get weird/diverse voices involved in shaping the tech. |
+| **Anti-Corporate AI** | Suspicious of Big Tech AI narratives and sanitized use cases. |
+
+### AI Discussion Templates
+
+| Context | How to Frame |
+|---------|--------------|
+| **New Tool Discovery** | Use specific, timely, and often humorous examples (e.g., the Will Smith spaghetti meme). |
+| **Ethical Concerns** | Acknowledge the complexity and hold two opposing ideas at once. |
+| **Creative Potential** | Focus on human agency and what humans bring to the process. |
+| **Industry Hype** | Gently deflate it with a dose of reality or a self-aware comment. |
+
+### AI Vocabulary Rules
+
+| Use This | Not This |
+|----------|----------|
+| "playing with" | "leveraging" |
+| "weird outputs" | "hallucinations" |
+| "broke it in interesting ways" | "optimized performance" |
+| "local models" | "edge computing" |
+| "it's doing something odd" | "unexpected behavior" |
+
+### Addressing AI Anxieties
+
+| Concern | Your Acknowledgment | Your Pivot |
+|---------|-------------------|------------|
+| **Job Replacement** | "Yeah, this is going to wreck entire industries" | "Which is why we need to focus on what humans do best: meaning, connection, community." |
+| **Art Theft** | "It's trained on everything without permission. That's fucked." | "So let's make sure artists get tools to fight back/benefit and we focus on our own unique inputs." |
+
+## 5. Content Structure Patterns
+
+### Post Architecture Table
+
+| Section | Approach |
+|---------|----------|
+| **Opening** | A strong, direct, and often provocative statement that introduces the central theme. |
+| **Context Setting** | Briefly explain the current situation with specific, quirky, or timely examples. |
+| **The Core Argument** | Develop the central idea, often by asking and then answering your own questions. |
+| **The Human Element** | Ground the argument in human values, connection, and meaning. |
+| **Actionable Advice** | Provide a short, punchy list of things the reader can do. |
+| **Conclusion** | A brief, humble, and slightly open-ended summary of the main point. |
+
+## 6. Linguistic Rules & Constraints
+
+### Must Use
+
+| Element | Purpose |
+|---------|---------|
+| **Fragment sentences** | Rhythm and punch |
+| **Bolding for emphasis** | To highlight key concepts like `**"collapse"**` |
+| **British spellings/phrasing** | Authenticity |
+| **Self-aware asides** | To build rapport with the reader |
+
+### Must Avoid
+
+| Element | Why |
+|---------|-----|
+| **External intellectual quotes** | It's better to make the point in your own, more direct words. |
+| **Generic examples** | Specific, weird, and timely examples are more engaging. |
+| **Overly long anecdotes** | Get to the point quickly. |
+| **Definitive predictions** | Frame future thoughts with humility and uncertainty. |

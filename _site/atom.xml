@@ -4,7 +4,7 @@
  <title>AAIIINTT</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-08-31T14:28:17+01:00</updated>
+ <updated>2025-09-01T10:49:02+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Iain Tait</name>
@@ -13,251 +13,63 @@
 
  
  <entry>
-   <title>Redefining Value in an AI-Driven World</title>
-   <link href="http://localhost:4000/technology/2025/08/31/central-argument-were/"/>
-   <updated>2025-08-31T00:00:00+01:00</updated>
-   <id>http://localhost:4000/technology/2025/08/31/central-argument-were</id>
-   <content type="html">&lt;h1 id=&quot;the-great-value-reset-what-actually-matters-when-ai-can-make-anything&quot;&gt;The Great Value Reset: What Actually Matters When AI Can Make Anything?&lt;/h1&gt;
-
-&lt;p&gt;Let’s get the scary part out of the way first. We’re about to experience the greatest collapse in creative value since… well, ever? And I know that sounds like hyperbolic nonsense. But stick with me.&lt;/p&gt;
+   <title>When My AI Experiments Went Brilliantly Wrong</title>
+   <link href="http://localhost:4000/technology/2025/09/01/when-my-ai-experiments-went-brilliantly-wrong/"/>
+   <updated>2025-09-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/technology/2025/09/01/when-my-ai-experiments-went-brilliantly-wrong</id>
+   <content type="html">&lt;p&gt;We’re thinking about AI all wrong. Not just a bit wrong - fundamentally missing the point. While everyone’s obsessed with getting ChatGPT to write their emails or Midjourney to generate their logo concepts, they’re overlooking something properly incredible: we’ve basically got a creative collaborator with access to the entire scope of human knowledge and culture.&lt;/p&gt;
 
 &lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/images/2025-08-31-central-argument-were/graph-showing-exponential-decline-in-costtime-to-produce-various-creative-outputs-from-1800-2025.webp&quot; alt=&quot;Graph showing exponential decline in cost/time to produce various creative outputs from 1800-2025&quot; class=&quot;image-large&quot; /&gt;
+  &lt;img src=&quot;/images/2025-09-01-when-my-ai-experiments-went-brilliantly-wrong/abstract-visualization-showing-interconnected-nodes-representing-human-knowledge-with-creative-possibilities-branching-out.webp&quot; alt=&quot;Abstract visualization showing interconnected nodes representing human knowledge, with creative possibilities branching out&quot; class=&quot;image-large&quot; /&gt;
   
 &lt;/div&gt;
 
-&lt;p&gt;A couple of years ago, if you wanted:&lt;/p&gt;
+&lt;h2 id=&quot;beyond-the-digital-butler&quot;&gt;Beyond the Digital Butler&lt;/h2&gt;
+
+&lt;p&gt;The current AI discourse feels stuck in this “helpful assistant” paradigm - like we’ve been given the keys to a massive creative studio but we’re only using it to organize the supply cupboard. Don’t get me wrong, I love a well-organized cupboard, but there’s so much more potential here.&lt;/p&gt;
+
+&lt;p&gt;I’ve been experimenting with some rather unorthodox approaches (read: somewhat questionable hacks) using various AI models, treating them less like tools and more like creative collaborators. The results have been… interesting.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-if-we-just&quot;&gt;What If We Just…?&lt;/h2&gt;
+
+&lt;p&gt;Here’s a concrete example: Instead of asking Claude to help write a story, I’ve been feeding it fragments of ancient myths, modern pop lyrics, and scientific papers about quantum mechanics - then asking it to find the connecting threads and weave something new. The outputs are genuinely fascinating, often spotting patterns that would take humans years of research to uncover.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-09-01-when-my-ai-experiments-went-brilliantly-wrong/screenshot-of-an-ai-generated-narrative-combining-ancient-mythology-with-quantum-physics-concepts.webp&quot; alt=&quot;Screenshot of an AI-generated narrative combining ancient mythology with quantum physics concepts&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-unexpected-connections&quot;&gt;The Unexpected Connections&lt;/h2&gt;
+
+&lt;p&gt;When you give an AI system this kind of creative freedom, it starts making these brilliant lateral connections. It’s like having a research assistant who’s simultaneously an expert in Renaissance art, molecular biology, and K-pop, and can spot the hidden parallels between them.&lt;/p&gt;
+
+&lt;p&gt;Some recent experiments:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;A funny illustration of a raspberry with legs&lt;/li&gt;
-  &lt;li&gt;30s of smooth jazz&lt;/li&gt;
-  &lt;li&gt;A 3d model of a persimmon&lt;/li&gt;
-  &lt;li&gt;An article&lt;/li&gt;
-  &lt;li&gt;A video&lt;/li&gt;
-  &lt;li&gt;Code&lt;/li&gt;
+  &lt;li&gt;Combining medieval illuminated manuscripts with circuit board designs&lt;/li&gt;
+  &lt;li&gt;Mixing cooking recipes with architectural principles&lt;/li&gt;
+  &lt;li&gt;Blending weather patterns with classical music structures&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You had to either:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Learn the skills (takes ages)&lt;/li&gt;
-  &lt;li&gt;Pay someone who had (£££)&lt;/li&gt;
-  &lt;li&gt;Accept something substandard&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking Forward&lt;/h2&gt;
 
-&lt;p&gt;Now? Well…&lt;/p&gt;
-
-&lt;p&gt;I think we all know how a blursed gif of Will Smith eating spaghetti has become Will Smith not actually using AI to create fans in his HD video in a couple of years.&lt;/p&gt;
-
-&lt;p&gt;I don’t think it’s hard to believe that at some point soon anyone will be able to make a decent version of anything. Unless something completly blows up.&lt;/p&gt;
-
-&lt;p&gt;So, when digital anything content / knowledge / software / etc can be made instantly and infinitely we have to start asking awkward questions.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What do humans actually value?&lt;/li&gt;
-  &lt;li&gt;What makes something meaningful?&lt;/li&gt;
-  &lt;li&gt;Why did we care about “creative work” in the first place?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The thing i care about in ‘creative work’ are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A friend taking time to help with a problem&lt;/li&gt;
-  &lt;li&gt;Someone understanding exactly what I mean and making it better&lt;/li&gt;
-  &lt;li&gt;A community coming together to build something&lt;/li&gt;
-  &lt;li&gt;The satisfaction of fixing something broken&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I know it’s been used as a comparison often but when photography arrived everyone lost their minds. “Painting is dead!”, “Who’ll ever commission a portrait again?”&lt;/p&gt;
-
-&lt;p&gt;But painting didn’t die. It evolved. It got weird. It got abstract. It started doing things cameras couldn’t. Because the value wasn’t in the precise reproduction of reality - it was in the human interpretation, the meaning, the mess.&lt;/p&gt;
-
-&lt;p&gt;And now we’re here again. But the scale and speed make it hard to know what to do, so lots of us are just looking the other way and hoping it won’t happen.&lt;/p&gt;
-
-&lt;p&gt;Right. So what’s the actual point here? A few things:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Stop Competing with AI&lt;/strong&gt;
-It’s pointless. It’s like competing with a calculator at arithmetic. Instead, start doing things AI can’t. Be weird. Be human. Be challenging.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Focus on Meaning, Not Output&lt;/strong&gt;
-The value isn’t in the thing you make. It’s in why you made it, who it’s for, who you made it with and what it means.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Build Communities&lt;/strong&gt;
-AI can make content. It can’t create connections. It can’t build communities.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Document the Human Bits&lt;/strong&gt;
-Share your process. Your mistakes. Your weird decisions. That’s the stuff AI can’t replicate.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;We’re in for a proper weird time. Things that used to be valuable won’t be. Things we never valued much might become precious. It’s going to be messy and uncomfortable and probably a bit scary.&lt;/p&gt;
-
-&lt;p&gt;But also…exciting?&lt;/p&gt;
-
-&lt;p&gt;Because maybe - just maybe - this forces us to focus on the actually important bits of being human. The messy bits. The connection bits. The meaning bits.&lt;/p&gt;
-
-&lt;p&gt;And at risk of stating the obvious. It’s not about what the tools can make. It’s about the meaning people like us can make with the tools. Or something like that…&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>CSS Grid best practices</title>
-   <link href="http://localhost:4000/design/2025/08/29/css-grid-best-practices/"/>
-   <updated>2025-08-29T00:00:00+01:00</updated>
-   <id>http://localhost:4000/design/2025/08/29/css-grid-best-practices</id>
-   <content type="html">&lt;h1 id=&quot;css-grid-best-practices-building-robust-layouts-for-modern-web-apps&quot;&gt;CSS Grid Best Practices: Building Robust Layouts for Modern Web Apps&lt;/h1&gt;
-
-&lt;p&gt;Now here’s the thing about CSS Grid: while it’s revolutionized how we build web layouts, many developers aren’t leveraging its full potential or are implementing it in ways that could cause maintainability headaches down the road. Let’s explore the best practices that will help you create more robust, flexible grid layouts.&lt;/p&gt;
-
-&lt;h2 id=&quot;understanding-the-foundation&quot;&gt;Understanding the Foundation&lt;/h2&gt;
-
-&lt;p&gt;Before diving into specific techniques, we need to grasp why CSS Grid has become such a crucial tool in modern web development. The key insight is that Grid is the first true layout system built specifically for the web, allowing us to think in two dimensions rather than being constrained to linear flows.&lt;/p&gt;
+&lt;p&gt;The real potential isn’t in getting AI to do our existing tasks more efficiently - it’s in discovering entirely new forms of creative expression that we haven’t even imagined yet. It’s about using these systems to explore the spaces between our traditional categories of knowledge and creativity.&lt;/p&gt;
 
 &lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/visual-comparison-of-flexbox-1d-vs-css-grid-2d-layout-approaches.webp&quot; alt=&quot;Visual comparison of flexbox (1D) vs CSS Grid (2D) layout approaches&quot; class=&quot;image-large&quot; /&gt;
+  &lt;img src=&quot;/images/2025-09-01-when-my-ai-experiments-went-brilliantly-wrong/speculative-visualization-of-future-human-ai-creative-collaboration-methods.webp&quot; alt=&quot;Speculative visualization of future human-AI creative collaboration methods&quot; class=&quot;image-large&quot; /&gt;
   
 &lt;/div&gt;
 
-&lt;h2 id=&quot;essential-best-practices&quot;&gt;Essential Best Practices&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-use-semantic-grid-areas&quot;&gt;1. Use Semantic Grid Areas&lt;/h3&gt;
-
-&lt;p&gt;In practice, this means naming your grid areas in a way that reflects their content and purpose. Here’s the wrong way to do it:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&quot;a b c&quot;&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&quot;d e f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;A better solution would be:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&quot;header header header&quot;&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&quot;sidebar main aside&quot;&lt;/span&gt;
-    &lt;span class=&quot;s1&quot;&gt;&quot;footer footer footer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;2-embrace-css-custom-properties-for-grid-parameters&quot;&gt;2. Embrace CSS Custom Properties for Grid Parameters&lt;/h3&gt;
-
-&lt;p&gt;What’s interesting here is how custom properties can make your grid layouts more maintainable and flexible:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;--grid-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;--grid-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nc&quot;&gt;.grid-container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--grid-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--grid-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;3-progressive-enhancement-and-fallbacks&quot;&gt;3. Progressive Enhancement and Fallbacks&lt;/h3&gt;
-
-&lt;p&gt;The problem with assuming Grid support everywhere is that some older browsers might not handle it well. Always include sensible fallbacks:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;flex-wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* Flexbox fallback */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;@supports&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;250px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;4-responsive-grid-patterns&quot;&gt;4. Responsive Grid Patterns&lt;/h3&gt;
-
-&lt;p&gt;In practice, this means using Grid’s powerful auto-placement features rather than fixed column counts:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.responsive-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/responsive-grid-layout-adapting-from-1-to-4-columns-at-different-breakpoints.webp&quot; alt=&quot;Responsive grid layout adapting from 1 to 4 columns at different breakpoints&quot; class=&quot;image-large&quot; /&gt;
-  
-&lt;/div&gt;
-
-&lt;h3 id=&quot;5-content-first-grid-sizing&quot;&gt;5. Content-First Grid Sizing&lt;/h3&gt;
-
-&lt;p&gt;The key insight here is that we should let content drive our grid dimensions when possible:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.content-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fit-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;common-pitfalls-to-avoid&quot;&gt;Common Pitfalls to Avoid&lt;/h2&gt;
-
-&lt;p&gt;Here’s the thing about Grid implementations - there are several common mistakes that can limit your layout’s flexibility:&lt;/p&gt;
+&lt;h2 id=&quot;practical-takeaways&quot;&gt;Practical Takeaways&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Over-nesting grid containers&lt;/li&gt;
-  &lt;li&gt;Using fixed pixel values instead of flexible units&lt;/li&gt;
-  &lt;li&gt;Ignoring the implicit grid&lt;/li&gt;
-  &lt;li&gt;Not considering content overflow&lt;/li&gt;
-  &lt;li&gt;Missing accessibility considerations&lt;/li&gt;
+  &lt;li&gt;Stop thinking about AI as just a task-completion tool&lt;/li&gt;
+  &lt;li&gt;Experiment with cross-disciplinary inputs&lt;/li&gt;
+  &lt;li&gt;Look for unexpected connections between different domains&lt;/li&gt;
+  &lt;li&gt;Give the AI room to surprise you with novel combinations&lt;/li&gt;
+  &lt;li&gt;Focus on exploration rather than specific outputs&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;performance-considerations&quot;&gt;Performance Considerations&lt;/h2&gt;
-
-&lt;p&gt;What’s interesting about CSS Grid performance is that while it’s generally very efficient, certain patterns can impact rendering:&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* Avoid frequent grid recalculation */&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.dynamic-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto-fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* Could cause layout thrashing if content frequently changes */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;/* Better for dynamic content */&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.stable-grid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;c&quot;&gt;/* More predictable layout behavior */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;browser-support-and-debug-tools&quot;&gt;Browser Support and Debug Tools&lt;/h2&gt;
-
-&lt;p&gt;In practice, this means testing your grid layouts across different browsers and using Firefox’s excellent Grid inspector tool for debugging.&lt;/p&gt;
-
-&lt;div class=&quot;image-container&quot;&gt;
-  &lt;img src=&quot;/images/2025-08-29-css-grid-best-practices/firefox-grid-inspector-tool-highlighting-grid-lines-and-areas.webp&quot; alt=&quot;Firefox Grid Inspector tool highlighting grid lines and areas&quot; class=&quot;image-large&quot; /&gt;
-  
-&lt;/div&gt;
-
-&lt;h2 id=&quot;actionable-takeaways&quot;&gt;Actionable Takeaways&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Start with semantic grid areas that reflect your content structure&lt;/li&gt;
-  &lt;li&gt;Use CSS custom properties for grid parameters that might need to change&lt;/li&gt;
-  &lt;li&gt;Implement progressive enhancement with proper fallbacks&lt;/li&gt;
-  &lt;li&gt;Choose auto-placement and flexible units over fixed values&lt;/li&gt;
-  &lt;li&gt;Test layouts across different viewport sizes and browsers&lt;/li&gt;
-  &lt;li&gt;Leverage Firefox’s Grid inspector for debugging&lt;/li&gt;
-  &lt;li&gt;Consider performance implications of dynamic grid patterns&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The future of web layouts is here with CSS Grid, but like any powerful tool, it requires thoughtful implementation. By following these best practices, you’ll create more maintainable, flexible, and robust layouts that stand the test of time and scale with your projects.&lt;/p&gt;
-
-&lt;p&gt;Remember: Grid isn’t just about creating layouts - it’s about creating systems that adapt to both content and context while maintaining visual harmony across your applications.&lt;/p&gt;
+&lt;p&gt;The next time you’re working with AI, try asking yourself: “What if instead of solving a problem, we explored something entirely new?” The results might surprise you. After all, we’ve got the sum of human knowledge to play with - seems a shame to just use it for writing emails, doesn’t it?&lt;/p&gt;
 </content>
  </entry>
  
