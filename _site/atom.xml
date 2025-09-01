@@ -4,7 +4,7 @@
  <title>AAIIINTT</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-09-01T11:01:45+01:00</updated>
+ <updated>2025-09-01T11:14:50+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Iain Tait</name>
@@ -70,6 +70,76 @@
 &lt;/ol&gt;
 
 &lt;p&gt;The next time you’re working with AI, try asking yourself: “What if instead of solving a problem, we explored something entirely new?” The results might surprise you. After all, we’ve got the sum of human knowledge to play with - seems a shame to just use it for writing emails, doesn’t it?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Build Your Own AI Tools, Not Services</title>
+   <link href="http://localhost:4000/technology/2025/09/01/build-your-own-ai-tools-not-services/"/>
+   <updated>2025-09-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/technology/2025/09/01/build-your-own-ai-tools-not-services</id>
+   <content type="html">&lt;p&gt;The AI startup graveyard isn’t just a cautionary tale - it’s a proper wake-up call about building things that actually matter. While everyone’s chasing the next big AI platform play, they’re missing the real opportunity: creating exactly what you need, for your specific context, without all the commercial faff.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-09-01-build-your-own-ai-tools-not-services/simple-sketch-showing-complex-enterprise-ai-system-vs-minimal-personal-tool.webp&quot; alt=&quot;Simple sketch showing complex enterprise AI system vs minimal personal tool&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;the-problem-with-platform-dreams&quot;&gt;The Problem with Platform Dreams&lt;/h2&gt;
+
+&lt;p&gt;Here’s what keeps happening: clever developers spot a gap in the market, build some genuinely impressive AI-powered service, then spend months trying to turn it into a “platform” that works for everyone. But that’s exactly backwards. The magic isn’t in making something universal - it’s in making something perfectly suited to a specific need.&lt;/p&gt;
+
+&lt;h2 id=&quot;small-tools-big-impact&quot;&gt;Small Tools, Big Impact&lt;/h2&gt;
+
+&lt;p&gt;I’ve been experimenting with this approach, building small, focused tools that do exactly what I want them to do. No feature bloat, no subscription prompts, no “engagement metrics” - just clean, purposeful functionality powered by the same AI models the big players use.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-09-01-build-your-own-ai-tools-not-services/screenshot-of-minimal-custom-built-tool-interface.webp&quot; alt=&quot;Screenshot of minimal custom-built tool interface&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;p&gt;The results have been rather interesting:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Speed of iteration&lt;/strong&gt;: When you’re building for yourself, you can ship updates in minutes, not months&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Perfect fit&lt;/strong&gt;: Every feature exists because it solves a real problem, not because it looked good in a pitch deck&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Zero marketing overhead&lt;/strong&gt;: No need to convince anyone else it’s useful&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Complete control&lt;/strong&gt;: Want to change how it works? Just… change it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-technical-bits&quot;&gt;The Technical Bits&lt;/h2&gt;
+
+&lt;p&gt;The brilliant thing is, we’ve got access to incredibly powerful AI tools now. Using something like OpenAI’s APIs or Anthropic’s Claude, you can build surprisingly sophisticated systems with relatively straightforward code. Here’s what you actually need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A basic web framework (Flask, Next.js, whatever you fancy)&lt;/li&gt;
+  &lt;li&gt;Some API keys for the AI services you want to use&lt;/li&gt;
+  &lt;li&gt;A clear idea of what problem you’re actually solving&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;why-this-matters&quot;&gt;Why This Matters&lt;/h2&gt;
+
+&lt;p&gt;The future of AI isn’t just about massive language models or enterprise platforms - it’s about individuals creating exactly what they need. It’s about taking these powerful tools and using them in ways that actually make sense for specific contexts.&lt;/p&gt;
+
+&lt;div class=&quot;image-container&quot;&gt;
+  &lt;img src=&quot;/images/2025-09-01-build-your-own-ai-tools-not-services/diagram-showing-simple-architecture-of-personal-ai-tool.webp&quot; alt=&quot;Diagram showing simple architecture of personal AI tool&quot; class=&quot;image-large&quot; /&gt;
+  
+&lt;/div&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;If you’re thinking about building something similar:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Start tiny - literally one feature that solves one problem&lt;/li&gt;
+  &lt;li&gt;Use existing AI APIs rather than trying to train your own models&lt;/li&gt;
+  &lt;li&gt;Focus on solving your specific use case perfectly&lt;/li&gt;
+  &lt;li&gt;Don’t worry about making it “scalable” or “marketable”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The point isn’t to create the next unicorn startup - it’s to build something that works exactly how you want it to. And that’s properly liberating.&lt;/p&gt;
+
+&lt;p&gt;Remember: The best software often starts as something built by one person, for one person, solving one specific problem really well. Everything else is just distraction.&lt;/p&gt;
 </content>
  </entry>
  
